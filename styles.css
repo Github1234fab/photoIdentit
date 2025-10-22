@@ -6,7 +6,7 @@
 body {
   font-family: Inter;
   background-color: #f9f9f9;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .header {
@@ -20,7 +20,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to left, #6d6d8e, #000091, #6d6d8e) ;
+  background: linear-gradient(to left, #6d6d8e, #000091, #6d6d8e);
   color: white;
   text-align: center;
   padding: 20px;
@@ -164,7 +164,7 @@ nav a:hover {
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  background-color: #255670;
+  background-color: green;
   padding: 20px 20px;
   border-radius: 5px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.467);
@@ -305,7 +305,7 @@ section h3 {
   font-weight: 700;
   letter-spacing: -0.6px;
 }
-section h4{
+section h4 {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 10px;
@@ -332,16 +332,15 @@ section h2 {
   text-align: center;
   font-size: 0.7rem;
   font-weight: 600;
-  background-color: green;
-  color: rgb(255, 255, 255);
+  background-color: rgb(232, 232, 232);
+  color: rgb(26, 25, 25);
   margin-bottom: 2px;
   border-radius: 5px;
-  border: 1px solid grey;
 }
 
 .wrapper__a {
   display: flex;
-gap: 5px;
+  gap: 5px;
 }
 #contactForm {
   background-color: rgb(231, 228, 228);
@@ -443,14 +442,9 @@ textarea {
   margin: 0 auto;
 }
 
-
-
-
 /* *************************** */
 /* MEDIAS */
 /* ****************************** */
-
-
 
 @media screen and (max-width: 1212px) {
   header h3 {
@@ -581,8 +575,8 @@ textarea {
   #contactForm h2 {
     margin-bottom: 30px;
   }
-  #contactForm  {
-  max-width: 100%;;
+  #contactForm {
+    max-width: 100%;
   }
 
   .photosI {
@@ -605,15 +599,14 @@ textarea {
     top: 38%;
     left: 70%;
   }
-  ul{
+  ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
   }
-  .wrapper__fontAwesom{
+  .wrapper__fontAwesom {
     flex-direction: flex;
     gap: 4px;
     margin-bottom: 20px;
-
   }
 }
