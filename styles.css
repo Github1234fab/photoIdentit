@@ -634,7 +634,7 @@ textarea {
 
   .photosI {
     width: auto;
-    height: 120px;
+    height: 180px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -643,7 +643,7 @@ textarea {
   }
   .img-camera-hero {
     width: auto;
-    height: 250px;
+    height: 200px;
     margin-bottom: 30px;
   }
 
@@ -681,5 +681,8 @@ ul {
   height: 320px;
   position: relative;
 
+}
+#formulaire p {
+min-width: 90%;
 }
 }
