@@ -1,0 +1,13 @@
+# Forcer HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Rediriger www vers non-www pour le nouveau domaine
+RewriteCond %{HTTP_HOST} ^www\.photo-identite-domicile-lyon-ouest\.fr$ [NC]
+RewriteRule ^(.*)$ https://photo-identite-domicile-lyon-ouest.fr/$1 [R=301,L]
+
+# Rediriger les anciens domaines vers le nouveau
+RewriteCond %{HTTP_HOST} ^(www\.)?photo-identité-domicile-lyon-ouest\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?xn--photo-identit-domicile-lyon-ouest-n6c\.com$ [NC]
+RewriteRule ^(.*)$ https://photo-identite-domicile-lyon-ouest.fr/$1 [R=301,L]
