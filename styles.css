@@ -68,9 +68,8 @@ footer p {
   width: 300px;
   height: 320px;
   position: relative;
- 
 }
-.offciels-docs span{
+.offciels-docs span {
   bottom: 10px;
   right: 10px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -108,6 +107,21 @@ footer p {
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+.wrapper__section4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin-bottom: 50px;
+  padding: 20px;
+
+}
+.wrapper__section4 p{
+text-align: center;
+margin-bottom: 50px;
+
 }
 nav {
   display: flex;
@@ -154,12 +168,15 @@ nav a:hover {
 
 .hero h1 {
   font-size: 4rem;
-  margin-top: 30px;
+
   font-weight: 900;
   letter-spacing: -2px;
 }
 .hero h1 span {
-  font-size: 2rem;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  color: #5fbcde;
+
 }
 .hero h2 {
   font-size: 2rem;
@@ -167,20 +184,35 @@ nav a:hover {
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.6px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  line-height: 40px;
 }
 .hero h3 {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 10px;
+  margin-top: 0px;
   letter-spacing: -0.6px;
 }
 .hero h4 {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 900;
   line-height: 24px;
-  margin-top: 0px;
+  color: rgb(105, 105, 160)
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 20px;
+  color: rgb(46, 46, 47);
+  background-color: white;
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 .tel {
@@ -257,11 +289,14 @@ nav a:hover {
 .question {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: first baseline;
   justify-content: center;
   text-align: left;
   gap: 20px;
-  padding: 10px;
+  padding: 40px;
+  max-width: 1200px;
+  background-color: rgb(240, 240, 240);
+  margin: 0 auto;
 }
 
 .question p {
@@ -485,25 +520,19 @@ textarea {
   margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* *************************** */
 /* MEDIAS */
 /* ****************************** */
 
 @media screen and (max-width: 768px) {
+  .offciels-docs span {
+  
+    white-space: nowrap;
+  }
+  .hero ul{
+    padding: 30px;
+    list-style: none;
+  }
   .wrapper__hero {
     background-color: rgb(237, 237, 237);
     padding: 20px;
@@ -603,6 +632,7 @@ textarea {
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+
   }
 
   .hero h2 {
@@ -671,30 +701,29 @@ textarea {
     z-index: 1;
   }
 
-ul {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-}
-.wrapper__fontAwesom {
-  flex-direction: flex;
-  gap: 4px;
-  margin-bottom: 20px;
-}
-.wrapper__infos-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0px;
-  padding: 30px;
-  border-radius: 20px;
-  margin: 0 auto;
-  width: 200px;
-  height: 320px;
-  position: relative;
-
-}
-#formulaire p {
-min-width: 90%;
-}
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .wrapper__fontAwesom {
+    flex-direction: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+  }
+  .wrapper__infos-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 200px;
+    height: 320px;
+    position: relative;
+  }
+  #formulaire p {
+    min-width: 90%;
+  }
 }
