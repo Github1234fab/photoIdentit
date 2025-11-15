@@ -114,8 +114,7 @@
     <header class="header">
       <nav>
         <div class="menu">
-          <img class="ants" src="./assets/agrée-ANTS.webp" alt="service agrée ANTS" />
-          <!-- <h3>Studio photo mobile sur Lyon et Lyon-Ouest</h3> -->
+          <img class="ants" src="./assets/agrée-ANTS.webp" alt="service agrée ANTS" />
           <div class="hamburger" onclick="toggleMenu()">
             <span>-</span>
             <span>-</span>
@@ -126,7 +125,31 @@
             <div class="wrapper__links">
               <a href="/#section-1"><i class="fa-solid fa-passport"></i> Documents</a>
               <a href="/#section-2"><i class="fa-solid fa-person"></i> Public</a>
-              <!-- <a href="/#section-3"> <i class="fa-solid fa-location-dot"></i> Localité</a> -->
+
+              <!-- Dropdown Localités -->
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                  <i class="fa-solid fa-location-dot"></i> Localités
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/localites/photo-identite-domicile-lyon.html">Lyon</a>
+                  <a href="/localites/photo-identite-domicile-tassin-la-demi-lune.html">Tassin-la-Demi-Lune</a>
+                  <a href="/localites/photo-identite-domicile-ecully.html">Écully</a>
+                  <a href="/localites/photo-identite-domicile-francheville.html">Francheville</a>
+                  <a href="/localites/photo-identite-domicile-charbonnieres-les-bains.html">Charbonnières-les-Bains</a>
+                  <a href="/localites/photo-identite-domicile-craponne.html">Craponne</a>
+                  <a href="/localites/photo-identite-domicile-marcy-l-etoile.html">Marcy-l'Étoile</a>
+                  <a href="/localites/photo-identite-domicile-oullins.html">Oullins</a>
+                  <a href="/localites/photo-identite-domicile-saint-genis-laval.html">Saint-Genis-Laval</a>
+                  <a href="/localites/photo-identite-domicile-pierre-benite.html">Pierre-Bénite</a>
+                  <a href="/localites/photo-identite-domicile-brignais.html">Brignais</a>
+                  <a href="/localites/photo-identite-domicile-l-arbresle.html">L'Arbresle</a>
+                  <a href="/localites/photo-identite-domicile-mornant.html">Mornant</a>
+                  <a href="/localites/photo-identite-domicile-saint-martin-en-haut.html">Saint-Martin-en-Haut</a>
+                </div>
+              </div>
+
               <a href="/#section-4"><i class="fa-solid fa-credit-card"></i> Tarif</a>
               <a href="/#contactForm"><i class="fa-solid fa-address-card"></i> Contact</a>
             </div>
@@ -380,6 +403,50 @@ MENU
         console.log(1);
         document.querySelector(".X").classList.toggle("active");
       }
+//       document.addEventListener('DOMContentLoaded', function() {
+//   const dropdownToggle = document.querySelector('.dropdown-toggle');
+//   const dropdown = document.querySelector('.dropdown');
+//   const dropdownLinks = document.querySelectorAll('.dropdown-menu a');
+  
+//   if (dropdownToggle && dropdown) {
+//     // Toggle du dropdown
+//     dropdownToggle.addEventListener('click', function(e) {
+//       e.preventDefault();
+      
+//       if (window.innerWidth <= 768) {
+//         e.stopPropagation();
+//         dropdown.classList.toggle('active');
+//       }
+//     });
+    
+//     // Fermer le dropdown si clic ailleurs
+//     document.addEventListener('click', function(e) {
+//       if (window.innerWidth <= 768) {
+//         if (!dropdown.contains(e.target)) {
+//           dropdown.classList.remove('active');
+//         }
+//       }
+//     });
+    
+//     // Empêcher la propagation sur le dropdown
+//     dropdown.addEventListener('click', function(e) {
+//       e.stopPropagation();
+//     });
+    
+//     // Fermer le menu hamburger après clic sur une localité
+//     dropdownLinks.forEach(link => {
+//       link.addEventListener('click', function() {
+//         if (window.innerWidth <= 768) {
+//           // Fermer le menu hamburger (appelle ta fonction toggleMenu si elle existe)
+//           const navLinks = document.getElementById('navLinks');
+//           if (navLinks && navLinks.classList.contains('active')) {
+//             toggleMenu(); // Utilise ta fonction existante
+//           }
+//         }
+//       });
+//     });
+//   }
+// });
     </script>
   </body>
 </html>

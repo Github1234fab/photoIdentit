@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo d'Identité à Domicile à Francheville | Photographe Agréé ANTS</title>
+    <meta name="description" content="Photographe professionnel à Francheville pour photos d'identité à domicile. Service agréé ANTS, intervention rapide dans tous les quartiers. 38€ les 6 photos.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Photo d'Identité à Domicile à Francheville">
+    <meta property="og:description" content="Service de photographie d'identité à domicile à Francheville. Photographe agréé ANTS.">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Photo d'Identité à Domicile - Fabien Marceau",
+      "image": "https://photo-identite-domicile-lyon-ouest.fr/images/logo.jpg",
+      "description": "Service de photographie d'identité agréé ANTS à domicile à Francheville",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Francheville",
+        "postalCode": "69340",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.7370,
+        "longitude": 4.7631
+      },
+      "url": "https://photo-identite-domicile-lyon-ouest.fr/photo-identite-domicile-francheville",
+      "telephone": "+33672901614",
+      "email": "id.domicile@gmail.com",
+      "priceRange": "38€",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Francheville"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: white;
+            color: rgb(2, 2, 84);
+        }
+        
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: rgb(240, 240, 240);
+            color: rgb(2, 2, 84);
+        }
+        
+        section:nth-child(even) {
+            background-color: white;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: rgb(2, 2, 84);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: opacity 0.3s;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+        
+        .price-box {
+            background-color: white;
+            border: 2px solid rgb(2, 2, 84);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .contact-info {
+            background-color: rgb(2, 2, 84);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact-info a {
+            color: white;
+            font-weight: bold;
+        }
+        
+        .map-container {
+            margin: 30px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <div class="menu">
+            <img class="ants" src="./assets/agrée-ANTS.webp" alt="service agrée ANTS" />
+            <!-- <h3>Studio photo mobile sur Lyon et Lyon-Ouest</h3> -->
+            <div class="hamburger" onclick="toggleMenu()">
+              <span>-</span>
+              <span>-</span>
+              <span>-</span>
+            </div>
+            <div class="menu-links" id="navLinks">
+              <div class="X" onclick="toggleMenu()">x</div>
+              <div class="wrapper__links">
+                <a href="/#section-1"><i class="fa-solid fa-passport"></i> Documents</a>
+                <a href="/#section-2"><i class="fa-solid fa-person"></i> Public</a>
+                <!-- <a href="/#section-3"> <i class="fa-solid fa-location-dot"></i> Localité</a> -->
+                <a href="/#section-4"><i class="fa-solid fa-credit-card"></i> Tarif</a>
+                <a href="/#contactForm"><i class="fa-solid fa-address-card"></i> Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+
+    <section>
+        <h1>Photographe pour Photo d'Identité à Domicile à Francheville</h1>
+        
+        <p>Besoin de <strong>photos d'identité à Francheville</strong> pour votre passeport, carte d'identité ou permis ? Je suis <strong>Fabien Marceau</strong>, photographe professionnel agréé, et je me déplace à votre domicile à Francheville pour réaliser vos photos conformes aux normes officielles ANTS.</p>
+        
+        <p>Que vous résidiez au Bourg de Francheville, à Francheville-le-Haut, au Puy d'Or ou vers le golf, mon service s'adapte à votre secteur. Plus besoin de vous déplacer en ville : je viens chez vous avec tout mon équipement professionnel et vous remets vos 6 photos d'identité immédiatement.</p>
+        
+        <div class="contact-info">
+            <h3>📞 Réservez Votre Séance</h3>
+            <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
+            <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
+            <p><strong>Disponibilités :</strong> Lundi-Vendredi 9h-20h | Samedi 10h-16h</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Un Service Adapté à Francheville et ses Quartiers</h2>
+        
+        <p>Francheville est une commune résidentielle de l'Ouest Lyonnais, réputée pour son cadre de vie agréable entre ville et nature. Avec mon service de photographie à domicile, je m'adapte parfaitement aux besoins des Franchevillois :</p>
+        
+        <ul>
+            <li><strong>Le Bourg</strong> : Centre historique, intervention rapide depuis la place de la mairie</li>
+            <li><strong>Francheville-le-Haut</strong> : Quartier résidentiel vallonné, accès facile</li>
+            <li><strong>Puy d'Or</strong> : Secteur calme et familial</li>
+            <li><strong>Proximité du golf</strong> : Zone résidentielle prisée</li>
+            <li><strong>Bois Dechavanne</strong> : Quartier verdoyant</li>
+            <li><strong>Les Genêts</strong> : Secteur dynamique proche des commerces</li>
+        </ul>
+        
+        <p>Francheville bénéficie d'un emplacement privilégié entre Lyon et la vallée du Rhône. Cette position centrale me permet d'intervenir rapidement, généralement dans les 24 à 48 heures suivant votre demande.</p>
+    </section>
+
+    <section>
+        <h2>Les Avantages du Service à Domicile à Francheville</h2>
+        
+        <p>Francheville est une commune où l'on apprécie la tranquillité et le confort. Mon service de photo à domicile s'inscrit parfaitement dans cette philosophie :</p>
+        
+        <h3>Confort et Simplicité</h3>
+        <ul>
+            <li><strong>Zéro déplacement</strong> : Pas besoin d'aller jusqu'à Lyon ou dans un centre commercial</li>
+            <li><strong>Économie de temps</strong> : La séance dure 15-20 minutes chez vous</li>
+            <li><strong>Pas d'attente</strong> : Rendez-vous personnalisé, vous êtes la priorité</li>
+        </ul>
+        
+        <h3>Idéal Pour Tous</h3>
+        <ul>
+            <li><strong>Familles</strong> : Faire toutes les photos en même temps, sans gérer les enfants dans un photomaton</li>
+            <li><strong>Seniors</strong> : Éviter les déplacements, surtout si mobilité réduite</li>
+            <li><strong>Actifs</strong> : Rendez-vous en soirée après le travail (jusqu'à 20h)</li>
+            <li><strong>Urgences</strong> : Intervention possible le jour même en cas de besoin impératif</li>
+        </ul>
+        
+        <h3>Qualité Professionnelle Garantie</h3>
+        <p>Contrairement aux photomatons, je vérifie personnellement chaque photo pour m'assurer qu'elle respecte les normes ANTS : éclairage, cadrage, expression, absence de reflets. Vos photos sont acceptées du premier coup en préfecture ou en mairie.</p>
+    </section>
+
+    <section>
+        <h2>Tarifs et Prestations</h2>
+        
+        <div class="price-box">
+            <h3>💰 Tarif Forfaitaire</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; margin: 10px 0;">38€ TTC</p>
+            <p><strong>Ce prix comprend :</strong></p>
+            <ul>
+                <li>Déplacement à votre domicile à Francheville (rayon 15 km inclus)</li>
+                <li>6 photos d'identité au format officiel</li>
+                <li>Photos imprimées sur papier professionnel</li>
+                <li>Conformité garantie aux normes ANTS</li>
+                <li>Remise immédiate des photos</li>
+            </ul>
+            
+            <p style="margin-top: 15px;"><strong>⚠️ Supplément :</strong> Au-delà de 15 km depuis Francheville, supplément de 29€.</p>
+        </div>
+        
+        <p>Aucun frais caché. Le tarif est transparent et vous payez uniquement après avoir reçu vos photos conformes.</p>
+        
+        <p><strong>Paiement accepté :</strong> Espèces, chèque, virement bancaire.</p>
+        
+        <a href="tel:+33672901614" class="cta-button">Prendre rendez-vous - 06 72 90 16 14</a>
+    </section>
+
+    <section>
+        <h2>Photos Conformes pour Toutes Démarches</h2>
+        
+        <p>Mes photos d'identité sont conformes aux <strong>normes ANTS</strong> (Agence Nationale des Titres Sécurisés) et sont acceptées pour :</p>
+        
+        <ul>
+            <li>✅ <strong>Passeport biométrique</strong></li>
+            <li>✅ <strong>Carte nationale d'identité (CNI)</strong></li>
+            <li>✅ <strong>Permis de conduire</strong></li>
+            <li>✅ <strong>Titre de séjour</strong></li>
+            <li>✅ <strong>Carte vitale</strong></li>
+            <li>✅ <strong>Dossiers administratifs divers</strong></li>
+        </ul>
+        
+        <p>Grâce à mon équipement professionnel (éclairage studio, fond neutre homologué, appareil photo haute résolution), je garantis des photos qui respectent tous les critères techniques :</p>
+        
+        <ul>
+            <li>Format 35 x 45 mm</li>
+            <li>Fond uni clair (gris neutre)</li>
+            <li>Photo nette, sans ombre portée</li>
+            <li>Visage centré, expression neutre</li>
+            <li>Tête droite, yeux ouverts, bouche fermée</li>
+            <li>Absence de reflets sur les lunettes</li>
+            <li>Conformité colorimétrique et contraste</li>
+        </ul>
+        
+        <h3>Où Utiliser Vos Photos à Francheville ?</h3>
+        
+        <p>Vos photos d'identité seront acceptées dans tous les lieux suivants :</p>
+        
+        <ul>
+            <li><strong>Mairie de Francheville</strong> : Pour vos demandes de CNI et passeport (procédure en ligne ou sur place)</li>
+            <li><strong>Préfecture du Rhône</strong> : À Lyon, à 20 minutes de Francheville</li>
+            <li><strong>Sous-préfecture</strong> : Selon votre secteur administratif</li>
+            <li><strong>Auto-écoles</strong> : Pour le permis de conduire</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Déroulement d'une Séance Photo à Domicile</h2>
+        
+        <p>Le processus est simple, rapide et sans stress :</p>
+        
+        <ol>
+            <li><strong>Contact et rendez-vous</strong> : Vous m'appelez au 06 72 90 16 14 ou m'envoyez un email. Nous convenons ensemble d'un créneau qui vous arrange.</li>
+            
+            <li><strong>Je me déplace chez vous</strong> : J'arrive à l'heure convenue avec tout mon matériel professionnel (fond, éclairage, appareil).</li>
+            
+            <li><strong>Installation</strong> : En 5 minutes, j'installe un mini-studio photo dans votre salon, entrée ou toute pièce avec un peu d'espace.</li>
+            
+            <li><strong>Prise de vue</strong> : Je réalise plusieurs clichés pour sélectionner la meilleure photo. Cela prend quelques minutes seulement.</li>
+            
+            <li><strong>Vérification</strong> : Je contrôle que la photo respecte tous les critères ANTS.</li>
+            
+            <li><strong>Impression et remise</strong> : Je vous remets vos 6 photos d'identité immédiatement, prêtes à l'emploi.</li>
+            
+            <li><strong>Paiement</strong> : Vous réglez après avoir reçu vos photos.</li>
+        </ol>
+        
+        <p><strong>Durée totale :</strong> 15 à 20 minutes maximum. C'est rapide, efficace et confortable.</p>
+        
+        <h3>Séance Photo pour Toute la Famille</h3>
+        
+        <p>Vous avez plusieurs personnes à photographier ? Parfait ! Je peux réaliser les photos de toute la famille lors d'une même intervention. C'est particulièrement pratique quand on doit renouveler les papiers de plusieurs membres de la famille en même temps.</p>
+        
+        <p>Tarif : 38€ par personne (6 photos chacune).</p>
+    </section>
+
+    <section>
+        <h2>Disponibilités et Rendez-vous</h2>
+        
+        <p>Je suis disponible à Francheville et dans tout l'Ouest Lyonnais aux horaires suivants :</p>
+        
+        <ul>
+            <li><strong>Du lundi au vendredi :</strong> 9h00 - 20h00</li>
+            <li><strong>Le samedi :</strong> 10h00 - 16h00</li>
+        </ul>
+        
+        <p>Ces horaires élargis me permettent de m'adapter à votre emploi du temps, même si vous travaillez en journée. Les rendez-vous en soirée (jusqu'à 20h) sont très appréciés des actifs.</p>
+        
+        <h3>Délais d'Intervention</h3>
+        
+        <p>En temps normal, je peux intervenir sous <strong>24 à 48 heures</strong> après votre prise de contact. Pour les situations urgentes (voyage imprévu, dossier administratif urgent), je fais mon maximum pour une intervention le jour même ou le lendemain.</p>
+        
+        <p><strong>Conseil :</strong> Anticipez quand même un peu vos démarches si possible, cela nous laisse plus de flexibilité pour trouver un créneau qui vous convient parfaitement.</p>
+    </section>
+
+    <section>
+        <h2>Couverture Géographique Autour de Francheville</h2>
+        
+        <p>Au-delà de Francheville, j'interviens également dans les communes voisines de l'Ouest Lyonnais :</p>
+        
+        <ul>
+            <li><a href="/photo-identite-domicile-tassin-la-demi-lune">Tassin-la-Demi-Lune</a> - À 5 minutes au nord</li>
+            <li><a href="/photo-identite-domicile-sainte-foy-les-lyon">Sainte-Foy-lès-Lyon</a> - Commune limitrophe</li>
+            <li><a href="/photo-identite-domicile-craponne">Craponne</a> - Vers l'ouest</li>
+            <li><a href="/photo-identite-domicile-oullins">Oullins</a> - Au sud-est</li>
+            <li><a href="/photo-identite-domicile-lyon">Lyon</a> - Accès rapide au centre-ville</li>
+        </ul>
+        
+        <p>Cette large zone de couverture me permet de servir efficacement tous les habitants de l'agglomération lyonnaise ouest.</p>
+    </section>
+
+    <section>
+        <h2>Foire Aux Questions - Francheville</h2>
+        
+        <h3>Intervenez-vous dans tous les quartiers de Francheville ?</h3>
+        <p>Oui, j'interviens partout à Francheville : Le Bourg, Francheville-le-Haut, Puy d'Or, quartier du golf, Bois Dechavanne, Les Genêts, etc. Quel que soit votre secteur, je me déplace.</p>
+        
+        <h3>Puis-je avoir un rendez-vous le soir après le travail ?</h3>
+        <p>Absolument. Je suis disponible jusqu'à 20h en semaine, ce qui permet aux personnes actives de bénéficier du service en rentrant du travail.</p>
+        
+        <h3>Mes photos seront-elles acceptées par la mairie de Francheville ?</h3>
+        <p>Oui, garanties 100%. Mes photos respectent scrupuleusement les normes ANTS et sont acceptées par toutes les mairies de France, y compris celle de Francheville.</p>
+        
+        <h3>Combien de temps prend une séance ?</h3>
+        <p>Entre 15 et 20 minutes au total, incluant l'installation du matériel, la prise de vue et la remise des photos.</p>
+        
+        <h3>Que dois-je prévoir pour la séance ?</h3>
+        <p>Pratiquement rien ! Juste un petit espace (2m x 2m suffit) dans votre logement. Je m'occupe de tout le reste : fond, éclairage, appareil photo.</p>
+        
+        <h3>Acceptez-vous les paiements par carte bancaire ?</h3>
+        <p>J'accepte les espèces, les chèques et les virements. Pour le moment, je n'ai pas de terminal carte bancaire, mais ces trois moyens de paiement sont généralement pratiques pour tous.</p>
+        
+        <h3>Et si la photo est refusée par l'administration ?</h3>
+        <p>Cela n'arrive jamais avec mes photos car elles sont conformes à 100%. Mais si par extraordinaire il y avait un problème technique, je reviens refaire la photo gratuitement.</p>
+    </section>
+
+    <section>
+        <h2>Contactez-moi pour Vos Photos à Francheville</h2>
+        
+        <p>Ne perdez plus de temps en déplacements et dans les files d'attente. Avec mon service de photographie à domicile, vous bénéficiez d'un confort optimal et de photos d'identité professionnelles garanties conformes.</p>
+        
+        <div class="contact-info">
+            <h3>📞 Prenez Rendez-vous Maintenant</h3>
+            <p><strong>Fabien Marceau</strong> - Photographe agréé ANTS</p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
+            <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
+            <p><strong>Horaires :</strong></p>
+            <ul>
+                <li>Lundi au vendredi : 9h00 - 20h00</li>
+                <li>Samedi : 10h00 - 16h00</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>Tarif :</strong> 38€ TTC pour 6 photos (déplacement inclus dans un rayon de 15 km)</p>
+        </div>
+        
+        <a href="tel:+33672901614" class="cta-button">Réserver votre séance photo</a>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89532.45!2d4.7631!3d45.7370!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea123456789%3A0x123456789abcdef!2sFrancheville!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>0672901614 - id.domicile@gmail.com</p>
+        <p>© 2025 Photos d'identité à domicile. <br />Tous droits réservés.</p>
+        <p>Mentions légales | Politique de confidentialité</p>
+      </footer>
+
+</body>
+</html>

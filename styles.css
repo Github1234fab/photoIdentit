@@ -1,3 +1,68 @@
+:root {
+  --primary-color: #0303b7;
+  --secondary-color: #1d1d32;
+  --accent-color: #5fbcde;
+  --background-color: #f9f9f9;
+  --text-color: #020254;
+  --font-family: 'Inter', sans-serif;
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+}
+
+.dropdown-toggle .fa-chevron-down {
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 1000;
+  margin-top: 0px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(2, 2, 84);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropdown-toggle .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +112,6 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
   padding: 20px;
 }
 .wrapper__links {
@@ -401,28 +465,7 @@ section h2 {
   letter-spacing: -0.6px;
 }
 
-/* .section ul {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
-/* .section li {
-  list-style: none;
-  padding: 20px 20px;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  background-color: rgb(84, 84, 220);
-  color: white;
-  margin-bottom: 2px;
-  border-radius: 5px;
-} */
+
 
 .wrapper__a {
   display: flex;
@@ -549,6 +592,44 @@ textarea {
 /* ****************************** */
 
 @media screen and (max-width: 768px) {
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(2, 2, 84);
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: rgb(240, 240, 240);
+  }
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-left: 3px solid rgb(2, 2, 84);
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 5px 0;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-toggle .fa-chevron-down {
+    transform: rotate(180deg);
+  }
+  
+  
+  /* Sur mobile, clic pour ouvrir/fermer */
+  .dropdown-toggle {
+    width: 420px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
   .offciels-docs span {
     white-space: nowrap;
   }
