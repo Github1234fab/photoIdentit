@@ -4,20 +4,22 @@
   --accent-color: #5fbcde;
   --background-color: #f9f9f9;
   --text-color: #020254;
-  --font-family: 'Inter', sans-serif;
+  --font-family: "Inter", sans-serif;
 }
 /* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .dropdown-toggle {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   cursor: pointer;
-
+  width: 100%;
 }
 
 .dropdown-toggle .fa-chevron-down {
@@ -32,7 +34,7 @@
   top: 100%;
   left: 0;
   background-color: white;
-  min-width: 250px;
+  width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 10px 0;
@@ -60,8 +62,6 @@
 .dropdown:hover .dropdown-toggle .fa-chevron-down {
   transform: rotate(180deg);
 }
-
-
 
 * {
   margin: 0;
@@ -279,7 +279,7 @@ ul {
   font-weight: 400;
   background-color: rgb(84, 84, 220);
   color: white;
-  border: 5px solid rgb(255, 255, 255)
+  border: 5px solid rgb(255, 255, 255);
   /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.324); */
 }
 
@@ -465,8 +465,6 @@ section h2 {
   letter-spacing: -0.6px;
 }
 
-
-
 .wrapper__a {
   display: flex;
   gap: 5px;
@@ -592,44 +590,6 @@ textarea {
 /* ****************************** */
 
 @media screen and (max-width: 768px) {
-  .dropdown-menu a {
-    display: block;
-    padding: 10px 20px;
-    color: rgb(2, 2, 84);
-    text-decoration: none;
-    transition: background-color 0.2s;
-  }
-  
-  .dropdown-menu a:hover {
-    background-color: rgb(240, 240, 240);
-  }
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    border-left: 3px solid rgb(2, 2, 84);
-    margin-left: 20px;
-    margin-top: 5px;
-    padding: 5px 0;
-  }
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown:hover .dropdown-toggle .fa-chevron-down {
-    transform: rotate(180deg);
-  }
-  
-  
-  /* Sur mobile, clic pour ouvrir/fermer */
-  .dropdown-toggle {
-    width: 420px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .dropdown.active .dropdown-menu {
-    display: block;
-  }
   .offciels-docs span {
     white-space: nowrap;
   }

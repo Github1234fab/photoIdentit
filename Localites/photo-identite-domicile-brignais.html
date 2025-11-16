@@ -48,8 +48,71 @@
         }
       }
     </script>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+        console.log(1);
+        document.querySelector(".X").classList.toggle("active");
+      }
+    </script>
 
     <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .dropdown-toggle .fa-chevron-down {
+        font-size: 0.8em;
+        transition: transform 0.3s ease;
+      }
+
+      /* Dropdown menu */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        padding: 10px 0;
+        z-index: 1000;
+        margin-top: 0px;
+      }
+
+      .dropdown-menu a {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(2, 2, 84);
+        text-decoration: none;
+        transition: background-color 0.2s;
+      }
+
+      .dropdown-menu a:hover {
+        background-color: rgb(240, 240, 240);
+      }
+
+      /* Show dropdown on hover (desktop) */
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-toggle .fa-chevron-down {
+        transform: rotate(180deg);
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -182,59 +245,7 @@
       .X {
         display: none;
       }
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
 
-      .dropdown-toggle {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        cursor: pointer;
-      }
-
-      .dropdown-toggle .fa-chevron-down {
-        font-size: 0.8em;
-        transition: transform 0.3s ease;
-      }
-
-      /* Dropdown menu */
-      .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: white;
-        min-width: 250px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
-        padding: 10px 0;
-        z-index: 1000;
-        margin-top: 0px;
-      }
-
-      .dropdown-menu a {
-        display: block;
-        padding: 10px 20px;
-        color: rgb(2, 2, 84);
-        text-decoration: none;
-        transition: background-color 0.2s;
-      }
-
-      .dropdown-menu a:hover {
-        background-color: green;
-        color: white;
-      }
-
-      /* Show dropdown on hover (desktop) */
-      .dropdown:hover .dropdown-menu {
-        display: block;
-      }
-
-      .dropdown:hover .dropdown-toggle .fa-chevron-down {
-        transform: rotate(180deg);
-      }
       nav {
         display: flex;
         justify-content: center;
@@ -370,25 +381,18 @@
                 </a>
                 <div class="dropdown-menu">
                   <a href="/localites/photo-identite-domicile-l-arbresle.html">L'Arbresle</a>
-
                   <a href="/localites/photo-identite-domicile-brignais.html">Brignais</a>
-
                   <a href="/localites/photo-identite-domicile-charbonnieres-les-bains.html">Charbonnières-les-Bains</a>
                   <a href="/localites/photo-identite-domicile-craponne.html">Craponne</a>
-
                   <a href="/localites/photo-identite-domicile-ecully.html">Écully</a>
                   <a href="/localites/photo-identite-domicile-francheville.html">Francheville</a>
-
                   <a href="/localites/photo-identite-domicile-lyon.html">Lyon</a>
                   <a href="/localites/photo-identite-domicile-marcy-l-etoile.html">Marcy-l'Étoile</a>
                   <a href="/localites/photo-identite-domicile-mornant.html">Mornant</a>
-
                   <a href="/localites/photo-identite-domicile-oullins.html">Oullins</a>
                   <a href="/localites/photo-identite-domicile-pierre-benite.html">Pierre-Bénite</a>
-
                   <a href="/localites/photo-identite-domicile-saint-genis-laval.html">Saint-Genis-Laval</a>
                   <a href="/localites/photo-identite-domicile-saint-martin-en-haut.html">Saint-Martin-en-Haut</a>
-
                   <a href="/localites/photo-identite-domicile-tassin-la-demi-lune.html">Tassin-la-Demi-Lune</a>
                 </div>
               </div>

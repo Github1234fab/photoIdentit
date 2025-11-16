@@ -1,178 +1,375 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo d'Identité à Domicile à Tassin-la-Demi-Lune | Service Agréé</title>
-    <meta name="description" content="Photographe agréé ANTS à Tassin-la-Demi-Lune. Je me déplace chez vous pour vos photos d'identité conformes passeport, CNI, permis. 38€ les 6 photos. Intervention rapide.">
-    <meta name="robots" content="index, follow">
-    
+    <meta name="description" content="Photographe agréé ANTS à Tassin-la-Demi-Lune. Je me déplace chez vous pour vos photos d'identité conformes passeport, CNI, permis. 38€ les 6 photos. Intervention rapide." />
+    <meta name="robots" content="index, follow" />
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Photo d'Identité à Domicile à Tassin-la-Demi-Lune">
-    <meta property="og:description" content="Photographe agréé pour photos d'identité à domicile à Tassin-la-Demi-Lune. Service professionnel et rapide.">
-    <meta property="og:type" content="website">
-    
+    <meta property="og:title" content="Photo d'Identité à Domicile à Tassin-la-Demi-Lune" />
+    <meta property="og:description" content="Photographe agréé pour photos d'identité à domicile à Tassin-la-Demi-Lune. Service professionnel et rapide." />
+    <meta property="og:type" content="website" />
+
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Photo d'Identité à Domicile - Fabien Marceau",
-      "image": "https://photo-identite-domicile-lyon-ouest.fr/images/logo.jpg",
-      "description": "Service de photographie d'identité agréé ANTS à domicile à Tassin-la-Demi-Lune",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Tassin-la-Demi-Lune",
-        "postalCode": "69160",
-        "addressCountry": "FR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 45.7644,
-        "longitude": 4.7756
-      },
-      "url": "https://photo-identite-domicile-lyon-ouest.fr/photo-identite-domicile-tassin-la-demi-lune",
-      "telephone": "+33672901614",
-      "email": "id.domicile@gmail.com",
-      "priceRange": "38€",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "20:00"
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Photo d'Identité à Domicile - Fabien Marceau",
+        "image": "https://photo-identite-domicile-lyon-ouest.fr/images/logo.jpg",
+        "description": "Service de photographie d'identité agréé ANTS à domicile à Tassin-la-Demi-Lune",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tassin-la-Demi-Lune",
+          "postalCode": "69160",
+          "addressCountry": "FR"
         },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "10:00",
-          "closes": "16:00"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.7644,
+          "longitude": 4.7756
+        },
+        "url": "https://photo-identite-domicile-lyon-ouest.fr/photo-identite-domicile-tassin-la-demi-lune",
+        "telephone": "+33672901614",
+        "email": "id.domicile@gmail.com",
+        "priceRange": "38€",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "16:00"
+          }
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": "Tassin-la-Demi-Lune"
         }
-      ],
-      "areaServed": {
-        "@type": "City",
-        "name": "Tassin-la-Demi-Lune"
+      }
+    </script>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+        console.log(1);
+        document.querySelector(".X").classList.toggle("active");
+      }
+    </script>
+
+<style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .dropdown-toggle .fa-chevron-down {
+      font-size: 0.8em;
+      transition: transform 0.3s ease;
+    }
+
+    /* Dropdown menu */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      padding: 10px 0;
+      z-index: 1000;
+      margin-top: 0px;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 20px;
+      color: rgb(2, 2, 84);
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: rgb(240, 240, 240);
+    }
+
+    /* Show dropdown on hover (desktop) */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-toggle .fa-chevron-down {
+      transform: rotate(180deg);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      background-color: white;
+      color: rgb(2, 2, 84);
+    }
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: rgb(240, 240, 240);
+      color: rgb(2, 2, 84);
+    }
+    section:nth-child(even) {
+      background-color: white;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    ul,
+    ol {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: rgb(2, 2, 84);
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .price-box {
+      background-color: white;
+      border: 2px solid rgb(2, 2, 84);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    .contact-info {
+      background-color: rgb(2, 2, 84);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .contact-info a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: #c8c0c0;
+      padding: 0px;
+      gap: 0px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .menu-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .wrapper__links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+    .ants {
+      width: auto;
+      height: 90px;
+      border-radius: 8px;
+      margin-bottom: 0px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      height: 5px;
+      width: 35px;
+      background: #0303b7;
+      border-radius: 2px;
+    }
+
+    .X {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    nav a {
+      padding: 8px 25px;
+      /* border: 1px solid grey; */
+      border-radius: 5px;
+      color: rgb(15, 15, 15);
+      background-color: rgb(255, 253, 253);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s ease-in-out;
+      font-weight: 600;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.324);
+    }
+    nav a:hover {
+      background-color: #4caf50;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+      header {
+        height: 100%;
+        gap: 0px;
+      }
+      .menu {
+        background-color: rgb(203, 201, 201);
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        justify-content: center;
+      }
+      .ants {
+        width: auto;
+        height: 100px;
+
+        margin-bottom: 0px;
+        border-radius: 20px;
+      }
+
+      .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: #255670b4;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 300px;
+        padding: 1rem;
+      }
+
+      .menu-links.active {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.908);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        z-index: 4;
+      }
+
+      .wrapper__links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+      }
+      .X.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        border-radius: 50%;
+        background-color: #b8bdc1;
+        position: absolute;
+        top: 2%;
+        left: 80%;
+        font-size: 1rem;
+        color: white;
+        z-index: 4;
+      }
+      .hamburger {
+        display: flex;
       }
     }
-    </script>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            background-color: white;
-            color: rgb(2, 2, 84);
-        }
-        
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: rgb(240, 240, 240);
-            color: rgb(2, 2, 84);
-        }
-        
-        section:nth-child(even) {
-            background-color: white;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        
-        h3 {
-            font-size: 1.4rem;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        
-        p {
-            margin-bottom: 15px;
-        }
-        
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: rgb(2, 2, 84);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: opacity 0.3s;
-        }
-        
-        .cta-button:hover {
-            opacity: 0.9;
-        }
-        
-        .price-box {
-            background-color: white;
-            border: 2px solid rgb(2, 2, 84);
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        
-        .contact-info {
-            background-color: rgb(2, 2, 84);
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        
-        .contact-info a {
-            color: white;
-            font-weight: bold;
-        }
-        
-        .map-container {
-            margin: 30px 0;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            h2 {
-                font-size: 1.4rem;
-            }
-        }
-    </style>
-</head>
-<body>
+  </style>
+
+  </head>
+  <body>
     <header class="header">
         <nav>
           <div class="menu">
-            <img class="ants" src="./assets/agrée-ANTS.webp" alt="service agrée ANTS" />
-            <!-- <h3>Studio photo mobile sur Lyon et Lyon-Ouest</h3> -->
+            <img class="ants" src="../assets/agrée-ANTS.webp" alt="service agrée ANTS" />
             <div class="hamburger" onclick="toggleMenu()">
               <span>-</span>
               <span>-</span>
@@ -183,7 +380,31 @@
               <div class="wrapper__links">
                 <a href="/#section-1"><i class="fa-solid fa-passport"></i> Documents</a>
                 <a href="/#section-2"><i class="fa-solid fa-person"></i> Public</a>
-                <!-- <a href="/#section-3"> <i class="fa-solid fa-location-dot"></i> Localité</a> -->
+  
+                <!-- Dropdown Localités -->
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle">
+                    <i class="fa-solid fa-location-dot"></i> Localités
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="/localites/photo-identite-domicile-l-arbresle.html">L'Arbresle</a>
+                    <a href="/localites/photo-identite-domicile-brignais.html">Brignais</a>
+                    <a href="/localites/photo-identite-domicile-charbonnieres-les-bains.html">Charbonnières-les-Bains</a>
+                    <a href="/localites/photo-identite-domicile-craponne.html">Craponne</a>
+                    <a href="/localites/photo-identite-domicile-ecully.html">Écully</a>
+                    <a href="/localites/photo-identite-domicile-francheville.html">Francheville</a>
+                    <a href="/localites/photo-identite-domicile-lyon.html">Lyon</a>
+                    <a href="/localites/photo-identite-domicile-marcy-l-etoile.html">Marcy-l'Étoile</a>
+                    <a href="/localites/photo-identite-domicile-mornant.html">Mornant</a>
+                    <a href="/localites/photo-identite-domicile-oullins.html">Oullins</a>
+                    <a href="/localites/photo-identite-domicile-pierre-benite.html">Pierre-Bénite</a>
+                    <a href="/localites/photo-identite-domicile-saint-genis-laval.html">Saint-Genis-Laval</a>
+                    <a href="/localites/photo-identite-domicile-saint-martin-en-haut.html">Saint-Martin-en-Haut</a>
+                    <a href="/localites/photo-identite-domicile-tassin-la-demi-lune.html">Tassin-la-Demi-Lune</a>
+                  </div>
+                </div>
+  
                 <a href="/#section-4"><i class="fa-solid fa-credit-card"></i> Tarif</a>
                 <a href="/#contactForm"><i class="fa-solid fa-address-card"></i> Contact</a>
               </div>
@@ -191,218 +412,231 @@
           </div>
         </nav>
       </header>
-  
 
     <section>
-        <h1>Photo d'Identité à Domicile à Tassin-la-Demi-Lune</h1>
-        
-        <p>Vous résidez à <strong>Tassin-la-Demi-Lune</strong> et avez besoin de photos d'identité conformes pour votre passeport, carte d'identité ou permis de conduire ? Je suis <strong>Fabien Marceau</strong>, photographe professionnel agréé ANTS, et je me déplace directement à votre domicile pour réaliser vos photos d'identité dans les meilleures conditions.</p>
-        
-        <p>Fini les déplacements en photomaton ou chez un photographe : je viens chez vous avec tout le matériel professionnel nécessaire pour des photos conformes aux normes officielles. Que vous habitiez au centre-ville, dans les quartiers résidentiels ou à proximité du parc de Tassin, je me déplace rapidement pour vous offrir un service de qualité.</p>
-        
-        <div class="contact-info">
-            <h3>📞 Contactez-moi</h3>
-            <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
-            <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
-            <p><strong>Horaires :</strong> Lundi-Vendredi 9h-20h | Samedi 10h-16h</p>
-        </div>
+      <h1>Photo d'Identité à Domicile à Tassin-la-Demi-Lune</h1>
+
+      <p>
+        Vous résidez à <strong>Tassin-la-Demi-Lune</strong> et avez besoin de photos d'identité conformes pour votre passeport, carte d'identité ou permis de conduire ? Je suis <strong>Fabien Marceau</strong>, photographe professionnel agréé ANTS, et je me déplace directement à votre domicile pour
+        réaliser vos photos d'identité dans les meilleures conditions.
+      </p>
+
+      <p>
+        Fini les déplacements en photomaton ou chez un photographe : je viens chez vous avec tout le matériel professionnel nécessaire pour des photos conformes aux normes officielles. Que vous habitiez au centre-ville, dans les quartiers résidentiels ou à proximité du parc de Tassin, je me déplace
+        rapidement pour vous offrir un service de qualité.
+      </p>
+
+      <div class="contact-info">
+        <h3>📞 Contactez-moi</h3>
+        <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
+        <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
+        <p><strong>Horaires :</strong> Lundi-Vendredi 9h-20h | Samedi 10h-16h</p>
+      </div>
     </section>
 
     <section>
-        <h2>Pourquoi Choisir un Photographe à Domicile à Tassin ?</h2>
-        
-        <p>À Tassin-la-Demi-Lune, les habitants apprécient la qualité de vie de leur commune et la proximité avec Lyon. Avec mon service de photographie à domicile, vous gagnez du temps et bénéficiez d'un confort maximal :</p>
-        
+      <h2>Pourquoi Choisir un Photographe à Domicile à Tassin ?</h2>
+
+      <p>À Tassin-la-Demi-Lune, les habitants apprécient la qualité de vie de leur commune et la proximité avec Lyon. Avec mon service de photographie à domicile, vous gagnez du temps et bénéficiez d'un confort maximal :</p>
+
+      <ul>
+        <li><strong>Gain de temps</strong> : Plus besoin de chercher un photomaton en centre-ville ou de vous déplacer jusqu'à Lyon</li>
+        <li><strong>Confort optimal</strong> : Idéal pour les personnes à mobilité réduite, les familles avec enfants en bas âge, ou les seniors</li>
+        <li><strong>Flexibilité horaire</strong> : Je m'adapte à votre emploi du temps, même en soirée après le travail</li>
+        <li><strong>Qualité professionnelle</strong> : Matériel professionnel et expérience garantissent des photos conformes du premier coup</li>
+        <li><strong>Service personnalisé</strong> : Je prends le temps nécessaire pour obtenir la meilleure photo possible</li>
+      </ul>
+
+      <p>Que vous habitiez près de la place centrale, dans le quartier de Méridien, ou à proximité du centre commercial Auchan, je peux intervenir rapidement partout à Tassin-la-Demi-Lune.</p>
+    </section>
+
+    <section>
+      <h2>Service de Photo d'Identité à Domicile dans Tous les Quartiers</h2>
+
+      <p>Je me déplace dans l'ensemble de Tassin-la-Demi-Lune et ses différents quartiers :</p>
+
+      <ul>
+        <li><strong>Centre-ville de Tassin</strong> : Intervention rapide depuis la mairie et l'avenue de la République</li>
+        <li><strong>Le Méridien</strong> : Quartier résidentiel calme, idéal pour une séance photo tranquille</li>
+        <li><strong>Les Tourelles</strong> : Zone facilement accessible, déplacement rapide</li>
+        <li><strong>Alaï</strong> : Proche du parc de Tassin, quartier familial</li>
+        <li><strong>La Demi-Lune</strong> : Secteur historique de la commune</li>
+        <li><strong>Proximité parc de Tassin</strong> : Quartier verdoyant très prisé des familles</li>
+      </ul>
+
+      <p>Tassin-la-Demi-Lune est une commune parfaitement desservie de l'Ouest Lyonnais. Depuis le centre, je peux être chez vous en moins de 10 minutes, quel que soit votre quartier. La proximité avec Lyon me permet également d'assurer un service rapide pour les demandes urgentes.</p>
+
+      <h3>Photos d'Identité pour Toute la Famille</h3>
+
+      <p>Mon service s'adapte à tous les membres de la famille :</p>
+
+      <ul>
+        <li><strong>Bébés et enfants</strong> : Je sais prendre le temps nécessaire pour obtenir une photo conforme, même avec les tout-petits qui bougent</li>
+        <li><strong>Adultes</strong> : Photo professionnelle en quelques minutes</li>
+        <li><strong>Seniors</strong> : Confort du domicile, pas besoin de se déplacer</li>
+        <li><strong>Personnes à mobilité réduite</strong> : Service particulièrement adapté</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tarifs Transparents et Compétitifs</h2>
+
+      <div class="price-box">
+        <h3>💰 Tarif Standard</h3>
+        <p style="font-size: 1.5rem; font-weight: bold; margin: 10px 0">38€ TTC</p>
+        <p>Ce tarif comprend :</p>
         <ul>
-            <li><strong>Gain de temps</strong> : Plus besoin de chercher un photomaton en centre-ville ou de vous déplacer jusqu'à Lyon</li>
-            <li><strong>Confort optimal</strong> : Idéal pour les personnes à mobilité réduite, les familles avec enfants en bas âge, ou les seniors</li>
-            <li><strong>Flexibilité horaire</strong> : Je m'adapte à votre emploi du temps, même en soirée après le travail</li>
-            <li><strong>Qualité professionnelle</strong> : Matériel professionnel et expérience garantissent des photos conformes du premier coup</li>
-            <li><strong>Service personnalisé</strong> : Je prends le temps nécessaire pour obtenir la meilleure photo possible</li>
+          <li>Déplacement à votre domicile à Tassin-la-Demi-Lune (dans un rayon de 15 km)</li>
+          <li>6 photos d'identité conformes aux normes ANTS</li>
+          <li>Photos au format papier de qualité professionnelle</li>
+          <li>Garantie de conformité pour vos démarches administratives</li>
         </ul>
-        
-        <p>Que vous habitiez près de la place centrale, dans le quartier de Méridien, ou à proximité du centre commercial Auchan, je peux intervenir rapidement partout à Tassin-la-Demi-Lune.</p>
+
+        <p style="margin-top: 15px"><strong>⚠️ Supplément distance :</strong> Au-delà de 15 km, un supplément de 29€ s'applique.</p>
+      </div>
+
+      <p>Ce tarif est <strong>tout compris</strong> : pas de frais cachés, pas de surprise. Vous payez sur place après avoir reçu vos photos conformes.</p>
+
+      <a href="tel:+33672901614" class="cta-button">Réserver maintenant - 06 72 90 16 14</a>
     </section>
 
     <section>
-        <h2>Service de Photo d'Identité à Domicile dans Tous les Quartiers</h2>
-        
-        <p>Je me déplace dans l'ensemble de Tassin-la-Demi-Lune et ses différents quartiers :</p>
-        
+      <h2>Photos Conformes aux Normes Officielles</h2>
+
+      <p>En tant que photographe agréé ANTS (Agence Nationale des Titres Sécurisés), je garantis que vos photos d'identité respectent scrupuleusement toutes les normes officielles exigées pour :</p>
+
+      <ul>
+        <li><strong>Passeport biométrique</strong></li>
+        <li><strong>Carte nationale d'identité (CNI)</strong></li>
+        <li><strong>Permis de conduire</strong></li>
+        <li><strong>Titre de séjour</strong></li>
+        <li><strong>Carte vitale</strong></li>
+      </ul>
+
+      <p>
+        Grâce à mon matériel professionnel et mon expérience, vos photos sont acceptées du premier coup par les administrations. J'utilise un éclairage adapté, un fond neutre conforme, et je vérifie tous les critères : expression neutre, position de la tête, absence de reflets sur les lunettes, etc.
+      </p>
+
+      <h3>Démarches Administratives à Tassin et Proximité</h3>
+
+      <p>Vos photos d'identité vous serviront pour vos démarches à :</p>
+
+      <ul>
+        <li><strong>Mairie de Tassin-la-Demi-Lune</strong> : Pour les demandes de CNI et passeport</li>
+        <li><strong>Préfecture du Rhône à Lyon</strong> : À seulement 15 minutes en voiture</li>
+        <li><strong>Sous-préfecture de Villefranche-sur-Saône</strong> : Facilement accessible depuis Tassin</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Comment se Déroule une Séance Photo à Domicile ?</h2>
+
+      <p>Le processus est simple et rapide :</p>
+
+      <ol style="margin-left: 20px">
+        <li><strong>Prise de rendez-vous</strong> : Contactez-moi par téléphone au 06 72 90 16 14 ou par email à id.domicile@gmail.com</li>
+        <li><strong>Choix du créneau</strong> : Je m'adapte à vos disponibilités (même en soirée ou le samedi)</li>
+        <li><strong>Intervention à domicile</strong> : J'arrive chez vous avec tout le matériel nécessaire</li>
+        <li><strong>Installation rapide</strong> : Je prépare le fond neutre et l'éclairage professionnel (5 minutes)</li>
+        <li><strong>Prise de vue</strong> : Photos réalisées en quelques minutes dans le confort de votre domicile</li>
+        <li><strong>Vérification</strong> : Je m'assure que les photos sont conformes aux normes</li>
+        <li><strong>Remise immédiate</strong> : Vous recevez vos 6 photos d'identité sur place</li>
+        <li><strong>Paiement</strong> : Vous réglez après avoir reçu vos photos (espèces, chèque ou virement)</li>
+      </ol>
+
+      <p>Toute la séance dure environ <strong>15 à 20 minutes</strong>. C'est rapide, professionnel et sans stress.</p>
+    </section>
+
+    <section>
+      <h2>Disponibilité et Délais d'Intervention</h2>
+
+      <p>Je suis disponible du <strong>lundi au vendredi de 9h à 20h</strong> et le <strong>samedi de 10h à 16h</strong>. Cette amplitude horaire me permet de m'adapter à votre emploi du temps, notamment pour les personnes qui travaillent en journée.</p>
+
+      <p><strong>Besoin urgent ?</strong> Dans la plupart des cas, je peux intervenir le jour même ou le lendemain à Tassin-la-Demi-Lune. Contactez-moi pour vérifier les disponibilités.</p>
+
+      <h3>Pourquoi les Habitants de Tassin Me Font Confiance</h3>
+
+      <ul>
+        <li><strong>Proximité</strong> : Intervention rapide dans toute la commune</li>
+        <li><strong>Professionnalisme</strong> : Photos conformes garanties</li>
+        <li><strong>Flexibilité</strong> : Horaires étendus et déplacements adaptés</li>
+        <li><strong>Transparence</strong> : Tarif clair et sans surprise</li>
+        <li><strong>Qualité</strong> : Matériel professionnel et expérience reconnue</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Zones d'Intervention Autour de Tassin-la-Demi-Lune</h2>
+
+      <p>En plus de Tassin-la-Demi-Lune, j'interviens également dans les communes voisines de l'Ouest Lyonnais :</p>
+
+      <ul>
+        <li><a href="/photo-identite-domicile-ecully">Écully</a> - À 5 minutes de Tassin</li>
+        <li><a href="/photo-identite-domicile-charbonnieres-les-bains">Charbonnières-les-Bains</a> - Commune limitrophe</li>
+        <li><a href="/photo-identite-domicile-francheville">Francheville</a> - Secteur Sud-Ouest</li>
+        <li><a href="/photo-identite-domicile-sainte-foy-les-lyon">Sainte-Foy-lès-Lyon</a> - Proche du parc de Tassin</li>
+        <li><a href="/photo-identite-domicile-lyon">Lyon</a> - Centre-ville accessible rapidement</li>
+      </ul>
+
+      <p>Cette couverture géographique étendue me permet d'offrir un service de proximité à tous les habitants de l'Ouest Lyonnais.</p>
+    </section>
+
+    <section>
+      <h2>Questions Fréquentes - Tassin-la-Demi-Lune</h2>
+
+      <h3>Vous déplacez-vous vraiment partout à Tassin ?</h3>
+      <p>Oui, j'interviens dans tous les quartiers de Tassin-la-Demi-Lune sans exception : centre-ville, Méridien, Tourelles, Alaï, proximité du parc, etc.</p>
+
+      <h3>Combien de temps à l'avance dois-je réserver ?</h3>
+      <p>Idéalement 24-48h à l'avance, mais je peux souvent intervenir le jour même en cas d'urgence. Appelez-moi pour vérifier les disponibilités.</p>
+
+      <h3>Les photos sont-elles acceptées en mairie de Tassin ?</h3>
+      <p>Absolument. Mes photos sont conformes aux normes ANTS et sont acceptées par toutes les mairies, y compris celle de Tassin-la-Demi-Lune, ainsi que par les préfectures.</p>
+
+      <h3>Puis-je faire photographier plusieurs personnes ?</h3>
+      <p>Oui, c'est tout à fait possible. Le tarif de 38€ s'applique par personne. C'est très pratique pour les familles qui souhaitent renouveler leurs papiers en même temps.</p>
+
+      <h3>Quels moyens de paiement acceptez-vous ?</h3>
+      <p>J'accepte les espèces, les chèques et les virements bancaires. Le paiement se fait après la remise des photos.</p>
+
+      <h3>Que faire si mes photos ne sont pas acceptées ?</h3>
+      <p>Mes photos sont garanties conformes. Si par extraordinaire une photo était refusée pour un motif technique, je reviens refaire la photo gratuitement.</p>
+    </section>
+
+    <section>
+      <h2>Réservez Votre Séance Photo à Tassin</h2>
+
+      <p>Ne perdez plus de temps dans les photomatons ou à chercher un photographe : avec mon service à domicile, vous bénéficiez d'un confort maximal et de photos d'identité professionnelles garanties conformes.</p>
+
+      <div class="contact-info">
+        <h3>📞 Contact et Réservation</h3>
+        <p><strong>Fabien Marceau</strong> - Photographe agréé ANTS</p>
+        <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
+        <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
+        <p><strong>Horaires d'intervention à Tassin :</strong></p>
         <ul>
-            <li><strong>Centre-ville de Tassin</strong> : Intervention rapide depuis la mairie et l'avenue de la République</li>
-            <li><strong>Le Méridien</strong> : Quartier résidentiel calme, idéal pour une séance photo tranquille</li>
-            <li><strong>Les Tourelles</strong> : Zone facilement accessible, déplacement rapide</li>
-            <li><strong>Alaï</strong> : Proche du parc de Tassin, quartier familial</li>
-            <li><strong>La Demi-Lune</strong> : Secteur historique de la commune</li>
-            <li><strong>Proximité parc de Tassin</strong> : Quartier verdoyant très prisé des familles</li>
+          <li>Lundi au vendredi : 9h00 - 20h00</li>
+          <li>Samedi : 10h00 - 16h00</li>
         </ul>
-        
-        <p>Tassin-la-Demi-Lune est une commune parfaitement desservie de l'Ouest Lyonnais. Depuis le centre, je peux être chez vous en moins de 10 minutes, quel que soit votre quartier. La proximité avec Lyon me permet également d'assurer un service rapide pour les demandes urgentes.</p>
-        
-        <h3>Photos d'Identité pour Toute la Famille</h3>
-        
-        <p>Mon service s'adapte à tous les membres de la famille :</p>
-        
-        <ul>
-            <li><strong>Bébés et enfants</strong> : Je sais prendre le temps nécessaire pour obtenir une photo conforme, même avec les tout-petits qui bougent</li>
-            <li><strong>Adultes</strong> : Photo professionnelle en quelques minutes</li>
-            <li><strong>Seniors</strong> : Confort du domicile, pas besoin de se déplacer</li>
-            <li><strong>Personnes à mobilité réduite</strong> : Service particulièrement adapté</li>
-        </ul>
-    </section>
+      </div>
 
-    <section>
-        <h2>Tarifs Transparents et Compétitifs</h2>
-        
-        <div class="price-box">
-            <h3>💰 Tarif Standard</h3>
-            <p style="font-size: 1.5rem; font-weight: bold; margin: 10px 0;">38€ TTC</p>
-            <p>Ce tarif comprend :</p>
-            <ul>
-                <li>Déplacement à votre domicile à Tassin-la-Demi-Lune (dans un rayon de 15 km)</li>
-                <li>6 photos d'identité conformes aux normes ANTS</li>
-                <li>Photos au format papier de qualité professionnelle</li>
-                <li>Garantie de conformité pour vos démarches administratives</li>
-            </ul>
-            
-            <p style="margin-top: 15px;"><strong>⚠️ Supplément distance :</strong> Au-delà de 15 km, un supplément de 29€ s'applique.</p>
-        </div>
-        
-        <p>Ce tarif est <strong>tout compris</strong> : pas de frais cachés, pas de surprise. Vous payez sur place après avoir reçu vos photos conformes.</p>
-        
-        <a href="tel:+33672901614" class="cta-button">Réserver maintenant - 06 72 90 16 14</a>
-    </section>
+      <a href="tel:+33672901614" class="cta-button">Appelez maintenant pour réserver</a>
 
-    <section>
-        <h2>Photos Conformes aux Normes Officielles</h2>
-        
-        <p>En tant que photographe agréé ANTS (Agence Nationale des Titres Sécurisés), je garantis que vos photos d'identité respectent scrupuleusement toutes les normes officielles exigées pour :</p>
-        
-        <ul>
-            <li><strong>Passeport biométrique</strong></li>
-            <li><strong>Carte nationale d'identité (CNI)</strong></li>
-            <li><strong>Permis de conduire</strong></li>
-            <li><strong>Titre de séjour</strong></li>
-            <li><strong>Carte vitale</strong></li>
-        </ul>
-        
-        <p>Grâce à mon matériel professionnel et mon expérience, vos photos sont acceptées du premier coup par les administrations. J'utilise un éclairage adapté, un fond neutre conforme, et je vérifie tous les critères : expression neutre, position de la tête, absence de reflets sur les lunettes, etc.</p>
-        
-        <h3>Démarches Administratives à Tassin et Proximité</h3>
-        
-        <p>Vos photos d'identité vous serviront pour vos démarches à :</p>
-        
-        <ul>
-            <li><strong>Mairie de Tassin-la-Demi-Lune</strong> : Pour les demandes de CNI et passeport</li>
-            <li><strong>Préfecture du Rhône à Lyon</strong> : À seulement 15 minutes en voiture</li>
-            <li><strong>Sous-préfecture de Villefranche-sur-Saône</strong> : Facilement accessible depuis Tassin</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Comment se Déroule une Séance Photo à Domicile ?</h2>
-        
-        <p>Le processus est simple et rapide :</p>
-        
-        <ol style="margin-left: 20px;">
-            <li><strong>Prise de rendez-vous</strong> : Contactez-moi par téléphone au 06 72 90 16 14 ou par email à id.domicile@gmail.com</li>
-            <li><strong>Choix du créneau</strong> : Je m'adapte à vos disponibilités (même en soirée ou le samedi)</li>
-            <li><strong>Intervention à domicile</strong> : J'arrive chez vous avec tout le matériel nécessaire</li>
-            <li><strong>Installation rapide</strong> : Je prépare le fond neutre et l'éclairage professionnel (5 minutes)</li>
-            <li><strong>Prise de vue</strong> : Photos réalisées en quelques minutes dans le confort de votre domicile</li>
-            <li><strong>Vérification</strong> : Je m'assure que les photos sont conformes aux normes</li>
-            <li><strong>Remise immédiate</strong> : Vous recevez vos 6 photos d'identité sur place</li>
-            <li><strong>Paiement</strong> : Vous réglez après avoir reçu vos photos (espèces, chèque ou virement)</li>
-        </ol>
-        
-        <p>Toute la séance dure environ <strong>15 à 20 minutes</strong>. C'est rapide, professionnel et sans stress.</p>
-    </section>
-
-    <section>
-        <h2>Disponibilité et Délais d'Intervention</h2>
-        
-        <p>Je suis disponible du <strong>lundi au vendredi de 9h à 20h</strong> et le <strong>samedi de 10h à 16h</strong>. Cette amplitude horaire me permet de m'adapter à votre emploi du temps, notamment pour les personnes qui travaillent en journée.</p>
-        
-        <p><strong>Besoin urgent ?</strong> Dans la plupart des cas, je peux intervenir le jour même ou le lendemain à Tassin-la-Demi-Lune. Contactez-moi pour vérifier les disponibilités.</p>
-        
-        <h3>Pourquoi les Habitants de Tassin Me Font Confiance</h3>
-        
-        <ul>
-            <li><strong>Proximité</strong> : Intervention rapide dans toute la commune</li>
-            <li><strong>Professionnalisme</strong> : Photos conformes garanties</li>
-            <li><strong>Flexibilité</strong> : Horaires étendus et déplacements adaptés</li>
-            <li><strong>Transparence</strong> : Tarif clair et sans surprise</li>
-            <li><strong>Qualité</strong> : Matériel professionnel et expérience reconnue</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Zones d'Intervention Autour de Tassin-la-Demi-Lune</h2>
-        
-        <p>En plus de Tassin-la-Demi-Lune, j'interviens également dans les communes voisines de l'Ouest Lyonnais :</p>
-        
-        <ul>
-            <li><a href="/photo-identite-domicile-ecully">Écully</a> - À 5 minutes de Tassin</li>
-            <li><a href="/photo-identite-domicile-charbonnieres-les-bains">Charbonnières-les-Bains</a> - Commune limitrophe</li>
-            <li><a href="/photo-identite-domicile-francheville">Francheville</a> - Secteur Sud-Ouest</li>
-            <li><a href="/photo-identite-domicile-sainte-foy-les-lyon">Sainte-Foy-lès-Lyon</a> - Proche du parc de Tassin</li>
-            <li><a href="/photo-identite-domicile-lyon">Lyon</a> - Centre-ville accessible rapidement</li>
-        </ul>
-        
-        <p>Cette couverture géographique étendue me permet d'offrir un service de proximité à tous les habitants de l'Ouest Lyonnais.</p>
-    </section>
-
-    <section>
-        <h2>Questions Fréquentes - Tassin-la-Demi-Lune</h2>
-        
-        <h3>Vous déplacez-vous vraiment partout à Tassin ?</h3>
-        <p>Oui, j'interviens dans tous les quartiers de Tassin-la-Demi-Lune sans exception : centre-ville, Méridien, Tourelles, Alaï, proximité du parc, etc.</p>
-        
-        <h3>Combien de temps à l'avance dois-je réserver ?</h3>
-        <p>Idéalement 24-48h à l'avance, mais je peux souvent intervenir le jour même en cas d'urgence. Appelez-moi pour vérifier les disponibilités.</p>
-        
-        <h3>Les photos sont-elles acceptées en mairie de Tassin ?</h3>
-        <p>Absolument. Mes photos sont conformes aux normes ANTS et sont acceptées par toutes les mairies, y compris celle de Tassin-la-Demi-Lune, ainsi que par les préfectures.</p>
-        
-        <h3>Puis-je faire photographier plusieurs personnes ?</h3>
-        <p>Oui, c'est tout à fait possible. Le tarif de 38€ s'applique par personne. C'est très pratique pour les familles qui souhaitent renouveler leurs papiers en même temps.</p>
-        
-        <h3>Quels moyens de paiement acceptez-vous ?</h3>
-        <p>J'accepte les espèces, les chèques et les virements bancaires. Le paiement se fait après la remise des photos.</p>
-        
-        <h3>Que faire si mes photos ne sont pas acceptées ?</h3>
-        <p>Mes photos sont garanties conformes. Si par extraordinaire une photo était refusée pour un motif technique, je reviens refaire la photo gratuitement.</p>
-    </section>
-
-    <section>
-        <h2>Réservez Votre Séance Photo à Tassin</h2>
-        
-        <p>Ne perdez plus de temps dans les photomatons ou à chercher un photographe : avec mon service à domicile, vous bénéficiez d'un confort maximal et de photos d'identité professionnelles garanties conformes.</p>
-        
-        <div class="contact-info">
-            <h3>📞 Contact et Réservation</h3>
-            <p><strong>Fabien Marceau</strong> - Photographe agréé ANTS</p>
-            <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
-            <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
-            <p><strong>Horaires d'intervention à Tassin :</strong></p>
-            <ul>
-                <li>Lundi au vendredi : 9h00 - 20h00</li>
-                <li>Samedi : 10h00 - 16h00</li>
-            </ul>
-        </div>
-        
-        <a href="tel:+33672901614" class="cta-button">Appelez maintenant pour réserver</a>
-        
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44488.89!2d4.7756!3d45.7644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e9f5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sTassin-la-Demi-Lune!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44488.89!2d4.7756!3d45.7644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e9f5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sTassin-la-Demi-Lune!5e0!3m2!1sfr!2sfr!4v1234567890"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </section>
     <footer>
-        <p>0672901614 - id.domicile@gmail.com</p>
-        <p>© 2025 Photos d'identité à domicile. <br />Tous droits réservés.</p>
-        <p>Mentions légales | Politique de confidentialité</p>
-      </footer>
-
-</body>
+      <p>0672901614 - id.domicile@gmail.com</p>
+      <p>© 2025 Photos d'identité à domicile. <br />Tous droits réservés.</p>
+      <p>Mentions légales | Politique de confidentialité</p>
+    </footer>
+  </body>
 </html>
