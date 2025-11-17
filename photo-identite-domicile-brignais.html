@@ -272,8 +272,49 @@
         background-color: #4caf50;
         color: white;
       }
+      .map-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      .map {
+        width: 100%;
+        height: 450px;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to left, #6d6d8e, #000091, #6d6d8e);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
 
-      @media (max-width: 768px) {
+      @media screen and (max-width: 1081px) {
+        .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1000;
+    margin-top: 0px;
+  }
         h1 {
           font-size: 1.8rem;
         }
@@ -503,6 +544,9 @@
       <p>Ces horaires élargis permettent aux actifs de bénéficier du service après le travail.</p>
       <p><strong>Délais :</strong> Intervention généralement sous 24-48h. Pour les urgences, intervention possible le jour même.</p>
     </section>
+    <div class="map-container">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22302.333306856664!2d4.732077005128968!3d45.67508254898502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ef156aafbe2d%3A0x489d15837935fd59!2s69530%20Brignais!5e0!3m2!1sfr!2sfr!4v1763358920177!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen=""  loading="lazy"> </iframe>
+  </div>
 
     <section>
       <h2>Questions Fréquentes</h2>

@@ -279,8 +279,48 @@
     background-color: #4caf50;
     color: white;
   }
-
-  @media (max-width: 768px) {
+  .map-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      .map {
+        width: 100%;
+        height: 450px;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to left, #6d6d8e, #000091, #6d6d8e);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+      @media screen and (max-width: 1081px) {
+        .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1000;
+    margin-top: 0px;
+  }
     h1 {
       font-size: 1.8rem;
     }
@@ -574,6 +614,10 @@
       </ul>
     </section>
 
+    <div class="map-container">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44488.89!2d4.6181!3d45.8350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e9f5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sL%27Arbresle!5e0!3m2!1sfr!2sfr!4v1234567890"  style="border:0;" allowfullscreen=""  loading="lazy"> </iframe>
+  </div>
+
     <section>
       <h2>Zones d'Intervention Autour de Tassin-la-Demi-Lune</h2>
 
@@ -633,7 +677,7 @@
 
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44488.89!2d4.7756!3d45.7644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e9f5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sTassin-la-Demi-Lune!5e0!3m2!1sfr!2sfr!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89068.20287849083!2d4.596255127280373!3d45.763547361635844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ec5723c2f447%3A0x408ab2ae4bb1a80!2s69160%20Tassin-la-Demi-Lune!5e0!3m2!1sfr!2sfr!4v1763360279703!5m2!1sfr!2sfr"
           width="100%"
           height="400"
           style="border: 0"

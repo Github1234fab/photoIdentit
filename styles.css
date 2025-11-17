@@ -71,7 +71,24 @@ body {
   font-family: Inter;
   background-color: #f9f9f9;
   padding: 20px 10px;
+  position: relative;
 }
+/* .CTA-call{
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: green;
+  padding: 20px 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.467);
+
+} */
 
 .header {
   display: flex;
@@ -134,8 +151,8 @@ footer p {
 .offciels-docs span {
   bottom: 10px;
   right: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+border: 1px solid rgba(128, 128, 128, 0.298);
+  color: rgb(30, 29, 29);
   padding: 5px 15px;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -280,7 +297,7 @@ ul {
   font-weight: 400;
   background-color: rgb(84, 84, 220);
   color: white;
-  border: 5px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.324); */
 }
 
@@ -586,11 +603,32 @@ textarea {
   margin-top: 50px;
 }
 
+#zones-intervention a {
+  text-decoration: none;
+  color: rgb(2, 2, 84);
+  font-weight: bold;
+  background-color: #c8c0c0;
+  padding: 10px;
+}
+
+#zones-intervention a:hover {
+  background-color: #eee9e9;
+}
+.villes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  margin-top: 20px;
+}
+
 /* *************************** */
 /* MEDIAS */
 /* ****************************** */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1081px) {
   .offciels-docs span {
     white-space: nowrap;
   }
