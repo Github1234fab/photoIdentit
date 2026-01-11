@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo d'Identité à Domicile à Chazelles-sur-Lyon | Photographe Agréé</title>
+    <meta name="description" content="Photographe agréé ANTS pour photos d'identité à domicile à Chazelles-sur-Lyon. Service professionnel, 38€ les 6 photos. Intervention rapide 42140." />
+    <meta name="robots" content="index, follow" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Photo d'Identité à Domicile - Fabien Marceau",
+        "description": "Service de photographie d'identité agréé ANTS à domicile à Chazelles-sur-Lyon",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chazelles-sur-Lyon",
+          "postalCode": "42140",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "45.63",
+          "longitude": "4.38"
+        },
+        "url": "https://photo-identite-domicile-lyon-ouest.fr/photo-identite-domicile-chazelles-sur-Lyon.html",
+        "telephone": "+33672901614",
+        "email": "id.domicile@gmail.com",
+        "priceRange": "38€",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "16:00"
+          }
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": "Chazelles-sur-Lyon"
+        }
+      }
+    </script>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+        console.log(1);
+        document.querySelector(".X").classList.toggle("active");
+      }
+    </script>
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .dropdown-toggle .fa-chevron-down {
+        font-size: 0.8em;
+        transition: transform 0.3s ease;
+      }
+
+      /* Dropdown menu */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        padding: 10px 0;
+        z-index: 1000;
+        margin-top: 0px;
+      }
+
+      .dropdown-menu a {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(2, 2, 84);
+        text-decoration: none;
+        transition: background-color 0.2s;
+      }
+
+      .dropdown-menu a:hover {
+        background-color: rgb(240, 240, 240);
+      }
+
+      /* Show dropdown on hover (desktop) */
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-toggle .fa-chevron-down {
+        transform: rotate(180deg);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        background-color: white;
+        color: rgb(2, 2, 84);
+      }
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: rgb(240, 240, 240);
+        color: rgb(2, 2, 84);
+      }
+      section:nth-child(even) {
+        background-color: white;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      ul,
+      ol {
+        margin-left: 20px;
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: rgb(2, 2, 84);
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .price-box {
+        background-color: white;
+        border: 2px solid rgb(2, 2, 84);
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+      .contact-info {
+        background-color: rgb(2, 2, 84);
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      .contact-info a {
+        color: white;
+        font-weight: bold;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+      }
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #c8c0c0;
+        padding: 0px;
+        gap: 0px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      .menu-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .wrapper__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+      }
+      .ants {
+        width: auto;
+        height: 90px;
+        border-radius: 8px;
+        margin-bottom: 0px;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+      }
+
+      .hamburger span {
+        height: 5px;
+        width: 35px;
+        background: #0303b7;
+        border-radius: 2px;
+      }
+
+      .X {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 25px;
+        border-radius: 5px;
+        color: rgb(15, 15, 15);
+        background-color: rgb(255, 253, 253);
+        text-decoration: none;
+        font-size: 1rem;
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.324);
+      }
+      nav a:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+      .map-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      .map {
+        width: 100%;
+        height: 450px;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to left, #6d6d8e, #000091, #6d6d8e);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+      @media screen and (max-width: 1081px) {
+        .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1000;
+    margin-top: 0px;
+  }
+        h1 {
+          font-size: 1.8rem;
+        }
+        nav {
+          flex-direction: column;
+        }
+        nav a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          width: 100%;
+          padding: 10px;
+          text-align: center;
+        }
+
+        .hamburger {
+          display: flex;
+        }
+        header {
+          height: 100%;
+          gap: 0px;
+        }
+        .menu {
+          background-color: rgb(203, 201, 201);
+          justify-content: center;
+          gap: 20px;
+          margin-top: 20px;
+          justify-content: center;
+        }
+        .ants {
+          width: auto;
+          height: 100px;
+
+          margin-bottom: 0px;
+          border-radius: 20px;
+        }
+
+        .menu-links {
+          display: none;
+          flex-direction: column;
+          background-color: #255670b4;
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          position: absolute;
+          top: 0px;
+          left: 0;
+          width: 300px;
+          padding: 1rem;
+        }
+
+        .menu-links.active {
+          display: flex;
+          height: 100vh;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.908);
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          z-index: 4;
+        }
+
+        .wrapper__links {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          margin-top: 50px;
+          text-align: center;
+          width: 100%;
+        }
+        .X.active {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          margin-right: 20px;
+          border-radius: 50%;
+          background-color: #b8bdc1;
+          position: absolute;
+          top: 2%;
+          left: 80%;
+          font-size: 1rem;
+          color: white;
+          z-index: 4;
+        }
+        .hamburger {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="menu">
+          <img class="ants" src="./assets/agrée-ANTS.webp" alt="service agrée ANTS" />
+          <div class="hamburger" onclick="toggleMenu()">
+            <span>-</span>
+            <span>-</span>
+            <span>-</span>
+          </div>
+          <div class="menu-links" id="navLinks">
+            <div class="X" onclick="toggleMenu()">x</div>
+            <div class="wrapper__links">
+              <a href="/#section-1"><i class="fa-solid fa-passport"></i> Documents</a>
+              <a href="/#section-2"><i class="fa-solid fa-person"></i> Public</a>
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle">
+                  <i class="fa-solid fa-location-dot"></i> Localités
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/photo-identite-domicile-l-arbresle.html">L'Arbresle</a>
+                  <a href="/photo-identite-domicile-brignais.html">Brignais</a>
+                  <a href="/photo-identite-domicile-charbonnieres-les-bains.html">Charbonnières-les-Bains</a>
+                  <a href="/photo-identite-domicile-craponne.html">Craponne</a>
+                  <a href="/photo-identite-domicile-ecully.html">Écully</a>
+                  <a href="/photo-identite-domicile-francheville.html">Francheville</a>
+                  <a href="/photo-identite-domicile-lyon.html">Lyon</a>
+                  <a href="/photo-identite-domicile-marcy-l-etoile.html">Marcy-l'Étoile</a>
+                  <a href="/photo-identite-domicile-mornant.html">Mornant</a>
+                  <a href="/photo-identite-domicile-oullins.html">Oullins</a>
+                  <a href="/photo-identite-domicile-pierre-benite.html">Pierre-Bénite</a>
+                  <a href="/photo-identite-domicile-sainte-foy-les-lyon.html">Sainte-Foy-lès-Lyon</a>
+                  <a href="/photo-identite-domicile-saint-genis-laval.html">Saint-Genis-Laval</a>
+                  <a href="/photo-identite-domicile-saint-martin-en-haut.html">Saint-Martin-en-Haut</a>
+                  <a href="/photo-identite-domicile-tassin-la-demi-lune.html">Tassin-la-Demi-Lune</a>
+                </div>
+              </div>
+              <a href="/#section-4"><i class="fa-solid fa-credit-card"></i> Tarif</a>
+              <a href="/#contactForm"><i class="fa-solid fa-address-card"></i> Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Photo d'Identité à Domicile à Chazelles-sur-Lyon</h1>
+      <p>Vous cherchez un <strong>photographe pour photos d'identité à Chazelles-sur-Lyon</strong> ? Je suis <strong>Fabien Marceau</strong>, photographe professionnel agréé ANTS, et je me déplace directement à votre domicile à Chazelles-sur-Lyon pour réaliser vos photos d'identité conformes aux normes officielles.</p>
+      <p>
+        Chazelles-sur-Lyon est une commune dynamique du département de la Loire. Avec mon service de photographie à domicile, vous bénéficiez d'un confort maximal sans avoir à vous déplacer. Je viens chez vous avec tout mon équipement professionnel et vous remets vos 6 photos immédiatement.
+      </p>
+      <div class="contact-info">
+        <h3>📞 Prenez Rendez-vous</h3>
+        <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
+        <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
+        <p><strong>Horaires :</strong> Lun-Ven 9h-20h | Sam 10h-16h</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Service de Photo à Domicile dans Tous les Quartiers de Chazelles-sur-Lyon</h2>
+      <p>J'interviens partout à Chazelles-sur-Lyon, dans tous ses quartiers : <!-- À compléter par toi --></p>
+      <p>Chazelles-sur-Lyon allie tradition et modernité, avec un cadre de vie agréable. Mon service de photographie à domicile vous évite le déplacement jusqu'aux grandes villes voisines.</p>
+      <h3>Pourquoi Choisir un Service à Domicile ?</h3>
+      <ul>
+        <li><strong>Gain de temps</strong> : Plus besoin de chercher un photomaton ou de vous déplacer</li>
+        <li><strong>Confort total</strong> : La séance se déroule chez vous, dans votre environnement</li>
+        <li><strong>Qualité professionnelle</strong> : Matériel pro et garantie de conformité</li>
+        <li><strong>Flexibilité horaire</strong> : Disponible jusqu'à 20h en semaine</li>
+        <li><strong>Idéal pour tous</strong> : Familles, seniors, personnes à mobilité réduite</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tarif Transparent et Tout Compris</h2>
+      <div class="price-box">
+        <h3>💰 Forfait Photo d'Identité</h3>
+        <p style="font-size: 1.5rem; font-weight: bold; margin: 10px 0">38€ TTC</p>
+        <p>Ce prix comprend :</p>
+        <ul>
+          <li>Déplacement à votre domicile à Chazelles-sur-Lyon (dans un rayon de 15 km)</li>
+          <li>6 photos d'identité au format officiel</li>
+          <li>Photos imprimées sur papier professionnel</li>
+          <li>Conformité garantie aux normes ANTS</li>
+          <li>Remise immédiate des photos</li>
+        </ul>
+        <p style="margin-top: 15px"><strong>⚠️ Supplément :</strong> Au-delà de 15 km, supplément de 29€.</p>
+      </div>
+      <p>Aucun frais caché. Paiement après remise des photos (espèces, chèque, virement).</p>
+      <a href="tel:+33672901614" class="cta-button">Réserver - 06 72 90 16 14</a>
+    </section>
+
+    <section>
+      <h2>Photos Conformes aux Normes ANTS</h2>
+      <p>En tant que photographe agréé ANTS, je garantis des photos conformes pour :</p>
+      <ul>
+        <li>✅ <strong>Passeport biométrique</strong></li>
+        <li>✅ <strong>Carte nationale d'identité</strong></li>
+        <li>✅ <strong>Permis de conduire</strong></li>
+        <li>✅ <strong>Titre de séjour</strong></li>
+        <li>✅ <strong>Carte vitale</strong></li>
+      </ul>
+      <p>Mon matériel professionnel (éclairage studio, fond homologué, appareil haute résolution) garantit le respect de tous les critères techniques : format 35x45mm, fond neutre, visage centré, expression neutre, absence de reflets.</p>
+      <h3>Acceptation Garantie</h3>
+      <p>Vos photos seront acceptées par la mairie de Chazelles-sur-Lyon, la préfecture du Rhône, et toutes les administrations françaises.</p>
+    </section>
+
+    <section>
+      <h2>Comment se Déroule une Séance ?</h2>
+      <ol>
+        <li><strong>Prise de rendez-vous</strong> : Contactez-moi au 06 72 90 16 14</li>
+        <li><strong>Je me déplace chez vous</strong> : À l'heure convenue avec tout le matériel</li>
+        <li><strong>Installation rapide</strong> : 5 minutes pour préparer le mini-studio</li>
+        <li><strong>Prise de vue</strong> : Photos réalisées en quelques minutes</li>
+        <li><strong>Vérification conformité</strong> : Je m'assure que tout est OK</li>
+        <li><strong>Remise immédiate</strong> : Vous recevez vos 6 photos sur place</li>
+        <li><strong>Paiement</strong> : Vous réglez après avoir vos photos</li>
+      </ol>
+      <p><strong>Durée totale :</strong> 15-20 minutes. Rapide, efficace, sans stress.</p>
+      <h3>Photos pour Toute la Famille</h3>
+      <p>Je peux photographier plusieurs personnes lors d'une même intervention. Tarif : 38€ par personne.</p>
+    </section>
+
+    <section>
+      <h2>Disponibilités et Délais</h2>
+      <p><strong>Horaires d'intervention :</strong></p>
+      <ul>
+        <li>Du lundi au vendredi : 9h00 - 20h00</li>
+        <li>Le samedi : 10h00 - 16h00</li>
+      </ul>
+      <p>Ces horaires élargis permettent aux actifs de bénéficier du service après le travail.</p>
+      <p><strong>Délais :</strong> Intervention généralement sous 24-48h. Pour les urgences, intervention possible le jour même.</p>
+    </section>
+
+    <section>
+      <h2>Questions Fréquentes</h2>
+      <h3>Vous déplacez-vous partout à Chazelles-sur-Lyon ?</h3>
+      <p>Oui, j'interviens dans tous les quartiers de Chazelles-sur-Lyon sans exception.</p>
+      <h3>Les photos sont-elles acceptées en mairie ?</h3>
+      <p>Oui, garanties 100%. Mes photos respectent les normes ANTS et sont acceptées partout.</p>
+      <h3>Combien de temps prend une séance ?</h3>
+      <p>Entre 15 et 20 minutes au total.</p>
+      <h3>Puis-je payer par carte bancaire ?</h3>
+      <p>J'accepte espèces, chèques et virements.</p>
+      <h3>Que faire si une photo est refusée ?</h3>
+      <p>Mes photos sont conformes. Mais si problème, je refais la photo gratuitement.</p>
+    </section>
+
+    <section>
+      <h2>Contactez-moi</h2>
+      <div class="contact-info">
+        <h3>📞 Réservation</h3>
+        <p><strong>Fabien Marceau</strong> - Photographe agréé ANTS</p>
+        <p><strong>Téléphone :</strong> <a href="tel:+33672901614">06 72 90 16 14</a></p>
+        <p><strong>Email :</strong> <a href="mailto:id.domicile@gmail.com">id.domicile@gmail.com</a></p>
+        <p><strong>Tarif :</strong> 38€ TTC (6 photos, déplacement inclus 15 km)</p>
+      </div>
+      <a href="tel:+33672901614" class="cta-button">Réserver maintenant</a>
+    </section>
+
+    <footer>
+      <p>0672901614 - id.domicile@gmail.com</p>
+      <p>© 2025 Photos d'identité à domicile. <br />Tous droits réservés.</p>
+      <p>Mentions légales | Politique de confidentialité</p>
+    </footer>
+  </body>
+</html>
