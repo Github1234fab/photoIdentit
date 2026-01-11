@@ -91,6 +91,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -102,6 +104,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .header {
@@ -1043,6 +1047,7 @@ textarea {
     flex-direction: column;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     padding: 2rem 1rem;
+    width: 100%;
   }
   .wrapper__a {
     display: flex;
@@ -1100,7 +1105,8 @@ textarea {
   #contactForm {
     max-width: 100%;
     padding: 2rem 1.5rem;
-    margin: 2rem 1rem;
+    margin: 2rem auto;
+    width: calc(100% - 2rem);
   }
 
   #contactForm h2 {
