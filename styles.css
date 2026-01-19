@@ -3649,12 +3649,13 @@ textarea {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
 }
 
 .pricing-card p {
-  font-size: 0.875rem;
-  color: var(--text-light);
+  font-size: 1.875rem;
   margin: 0;
+  color: red;
 }
 
 .pricing-note {
