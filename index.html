@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://photo-identite-domicile-lyon-ouest.fr/" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -35,7 +35,7 @@
         "url": "https://photo-identite-domicile-lyon-ouest.fr/",
         "telephone": "+33-6-72-90-16-14",
         "email": "id.domicile@gmail.com",
-        "priceRange": "39€-75€",
+        "priceRange": "49€-79€",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Lyon",
@@ -112,7 +112,6 @@
     <meta name="google-site-verification" content="PUXN39nB3G4cmdZMdM_UpZ9roupyp5DKi8HPXWzv5bc" />
   </head>
   <body>
-    <!-- <button class="CTA-call">Appelez au 06 72 90 16 14</button> -->
     <header class="header">
       <nav>
         <div class="menu">
@@ -126,8 +125,8 @@
             <div class="X" onclick="toggleMenu()">x</div>
             <div class="wrapper__links">
               <a href="/"><i class="fa-solid fa-home"></i> Accueil</a>
-              <a href="/#section-1"><i class="fa-solid fa-passport"></i> Documents</a>
-              <a href="/#section-2"><i class="fa-solid fa-person"></i> Public</a>
+              <a href="/#section-1"><i class="fa-solid fa-info-circle"></i> Étapes</a>
+              <a href="/#section-2"><i class="fa-solid fa-credit-card"></i> Tarifs</a>
 
               <!-- Dropdown Localités -->
               <div class="dropdown">
@@ -153,7 +152,6 @@
                 </div>
               </div>
 
-              <a href="/#section-4"><i class="fa-solid fa-credit-card"></i> Tarif</a>
               <a href="/#contactForm"><i class="fa-solid fa-address-card"></i> Contact</a>
             </div>
           </div>
@@ -161,236 +159,312 @@
       </nav>
     </header>
 
+    <!-- HERO SECTION -->
     <div class="hero">
       <h1>
-        Photo d’identité à domicile <br />
+        Photo d'identité à domicile <br />
         <span>Lyon et Lyon-Ouest</span>
       </h1>
-      <div class="wrapper__infos-img">
-        <img src="./assets/Logo-Photographe.webp" alt="appareil photo illustration" class="img-camera-hero" />
-        <img class="CI-visuel" src="./assets/CI.png" alt="pièce d'identité" />
-        <!-- <div class="circle-info-tarif">38€</div> -->
-      </div>
-      <div class="wrapper__hero">
-        <h2><strong>La solution simple à votre casse-tête</h2>
-          <br>
-        <h3>
-        Photos d’identité officielles à domicile
-          conformes aux normes ANTS, <br>
-          pour tous ceux qui ne peuvent pas se déplacer : 
-          <br> <strong>49 euros ttc *</strong></h3>
 
-        <div class="documents-list">
-          <div class="document-badge">✅ Passeport biométrique</div>
-          <div class="document-badge">✅ Carte d'identité</div>
-          <div class="document-badge">✅ Permis de conduire</div>
-          <div class="document-badge">✅ Titre de séjour</div>
+      <div class="hero-content">
+        <div class="hero-main">
+          <p class="hero-tagline">Vous ne pouvez pas vous déplacer ? <br> <strong>Je viens à vous.</strong></p>
+
+          <div class="hero-price-box">
+            <span class="price-label">À partir de</span>
+            <span class="price-amount">59€</span>
+            <span class="price-detail">6 photos • déplacement inclus</span>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge badge-ants"><img src="./assets/agrée-ANTS.webp" alt="Agréé ANTS" class="badge-icon-ants" /> Agréé ANTS</span>
+            <span class="badge badge-time">⏱️ Prêt en 20 min</span>
+            <span class="badge badge-guarantee">✓ Acceptée ou refaite gratuitement</span>
+          </div>
+
+          <a class="cta-primary" href="tel:0672901614">
+            <i class="fa-solid fa-phone-volume"></i>
+            Appelez maintenant : 06 72 90 16 14
+          </a>
         </div>
-        <!-- <h4>Service agrée ANTS - Normes ISO/IEC 19794-5</h4> -->
-      
-        <!-- <h4>À votre domicile, sur votre lieu de travail, à l'hôpital, en clinique, en centre, en EHPAD...</h4> -->
-        <h6>- Jusqu'à 15 km : 49 €  
-          - De 15 km à 25 km : 64 €  
-          - Au‑delà de 25 km : 79 € </h6>
-        <ul>
-          <li>Enfant</li>
-          <li>Bébé</li>
-          <li>Personnes âgées (Seniors)</li>
-          <li>Personnes à mobilité réduite (PMR)</li>
-          <li>Handicapés</li>
-          <li>Hospitalisés</li>
-          <li>Entrepreneurs</li>
-          <li>Profession Libérale</li>
-          <li>Sans véhicules</li>
-        </ul>
-        <div class="wrapper__call-mail">
-          <a class="tel" href="tel:0672901614">Appelez maintenant <i class="fa-solid fa-phone-volume"></i> </a>
+
+        <div class="hero-visual">
+          <img src="./assets/ident7.png" alt="Portrait photo d'identité professionnelle" class="hero-img" />
+          <div class="hero-floating-card">
+            <span class="floating-stars">⭐⭐⭐⭐⭐</span>
+            <span class="floating-text">"Parfait, photos acceptées du premier coup !"</span>
+          </div>
         </div>
+      </div>
+
+      <div class="documents-strip">
+        <span>Valable pour :</span>
+        <div class="document-badge">Passeport</div>
+        <div class="document-badge">Carte d'identité</div>
+        <div class="document-badge">Permis de conduire</div>
+        <div class="document-badge">Titre de séjour</div>
       </div>
     </div>
 
-    <section class="section">
-      <h2>Un service humain, simple, rapide et efficace</h2>
-        <h3>Service agrée ANTS - Normes ISO/IEC 19794-5</h3>
-      <p>Un service fiable, <strong>agrée ANTS</strong> et adapté à votre situation, directement à votre <strong>domicile</strong>, <strong>à l'Hôpital</strong>, <strong>en centre</strong>, <strong>en clinique</strong> ou <strong>sur votre lieu de travail.</strong></p>
-      <img class="img-old-personnage" src="./assets/hero-photo-id.webp" alt="photo d'une personne âgée prise en photo" />
-      <a class="tel" href="tel:0672901614">Prendre rendez-vous <i class="fa-solid fa-phone-volume"></i> </a>
-    </section>
+    <!-- SECTION POUR QUI -->
+    <section class="section section-audience" id="pour-qui">
+      <h2>Pour qui ?</h2>
+      <p class="section-subtitle">Je me déplace là où vous êtes, quelle que soit votre situation</p>
+   
 
-    <section class="section" id="section-1">
-      <h2>
-        6 photos d'identités ou E-photos <br />
-        instantanées, pour tous vos documents officiels.
-      </h2>
-      <h3>Service agrée ANTS - Normes ISO/IEC 19794-5</h3>
-      <h4>Prise de vue et impression instantanée, pour des photos d'identité à votre domicile ou ailleurs.</h4>
-      <img class="photosI" src="./assets/photos-identité.webp" alt="photos d'identité" />
-      <p>
-        Obtenez vos photos d'identités à l'endroit ou vous vous trouvez. <br />Grâce à notre studio de photographie mobile, nous vous remettons instantanément vos photos d'identité, aux normes Normes ISO/IEC 19794-5 - ANTS. <br />La prise de vue et l'impression se font sur place en 15 minutes
-        maximum.
-      </p>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=300&h=300&fit=crop&crop=face" alt="Photo identité bébé nourrisson" class="audience-img" />
+          <h3>Bébés & Nourrissons</h3>
+          <p>Pas besoin de déplacer bébé. Je m'adapte à son rythme.</p>
+        </div>
 
-      <ul>
-        <li>Carte d’identité</li>
-        <li>Passeport</li>
-        <li>Permis de conduire (e-photo)</li>
-        <li>Titre de séjour (e-photo)</li>
-        <li>Linkedin portrait</li>
-      </ul>
+        <div class="audience-card">
+          <img src="https://images.unsplash.com/photo-1566616213894-2d4e1baee5d8?w=300&h=300&fit=crop&crop=face" alt="Photo identité personne âgée senior" class="audience-img" />
+          <h3>Seniors</h3>
+          <p>À domicile ou en EHPAD, en toute tranquillité.</p>
+        </div>
 
-      <a class="tel" href="tel:0672901614">Appeler <i class="fa-solid fa-phone-volume"></i> </a>
-    </section>
+        <div class="audience-card">
+          <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=300&h=300&fit=crop" alt="Photo identité hôpital clinique" class="audience-img" />
+          <h3>Personnes hospitalisées</h3>
+          <p>Intervention à l'hôpital ou en clinique.</p>
+        </div>
 
-    <section class="section" id="section-2">
-      <h2>Limitez vos déplacement et gagner du temps</h2>
-      <div class="wrapper__fontAwesom">
-        <i class="fa-brands fa-accessible-icon fa-2xl border-fontawesom fa-bounce slow-bounce"></i>
-        <i class="fa-solid fa-person-cane fa-2xl border-fontawesom fa-bounce slow-bounce"></i>
-        <i class="fa-solid fa-children fa-2xl border-fontawesom fa-bounce slow-bounce"></i>
-        <i class="fa-solid fa-person fa-2xl border-fontawesom fa-bounce slow-bounce"></i>
+        <div class="audience-card">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face" alt="Photo identité chef entreprise professionnel" class="audience-img" />
+          <h3>Professionnels</h3>
+          <p>Sur votre lieu de travail, sans perdre de temps.</p>
+        </div>
+
+        <div class="audience-card">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face" alt="Photo identité PMR mobilité réduite" class="audience-img" />
+          <h3>PMR & Handicap</h3>
+          <p>Équipement mobile adapté à toutes les situations.</p>
+        </div>
+
+        <div class="audience-card">
+          <img src="https://images.pexels.com/photos/4008824/pexels-photo-4008824.jpeg?_gl=1*vmrexu*_ga*ODEyMTE3NTYzLjE3Njg4MTM0Mzg.*_ga_8JE65Q40S6*czE3Njg4MjAxNjkkbzIkZzEkdDE3Njg4MjEwMzUkajEyJGwwJGgw" alt="Photo identité famille enfants" class="audience-img" />
+          <h3>Familles</h3>
+          <p>Photos pour toute la famille en une seule visite.</p>
+        </div>
       </div>
-      <h3>Vous ne pouvez pas vous déplacer ou vous n'avez pas le temps ? Optez pour des photos d'identité à domicile, sans contraintes.</h3>
-      <p>
-        Vous êtes <strong>hospitalisé</strong>, en <strong>invalidité</strong> ? <br />Vous n'avez pas le <strong>temps de vous déplacer</strong> ? <br />
-        Vous avez des <strong>enfants en bas âge </strong>? <br /><br />Appelez moi pour obtenir vos photos d'identités, à votre domicile ou ailleurs. La prise de vue et la l'impression des photos d'identité se font sur place, instantanément. <br />
-        Il vous suffit de m'appeler pour prendre rendez-vous, c'est simple, garantit et rapide.
-      </p>
 
-      <ul>
-        <li>Personne hospitalisée</li>
-        <li>Personnes à mobilité réduite</li>
-        <li>Nourissons, enfants en bas âge</li>
-        <li>Seniors ou personnes isolées</li>
-        <li>Profession libérale & professsionnels ne pouvant se déplacer</li>
-        <li>Cliniques, centre, maisons de retraite, foyers...</li>
-      </ul>
-      <a class="tel" href="tel:0672901614">Appelez maintenant <i class="fa-solid fa-phone-volume"></i> </a>
+      <a class="tel" href="tel:0672901614">Prendre rendez-vous <i class="fa-solid fa-phone-volume"></i></a>
     </section>
 
-    <section class="section" id="zones-intervention">
+    <!-- SECTION COMMENT CA MARCHE -->
+    <section class="section section-steps" id="section-1">
+      <h2>Comment ça marche ?</h2>
+      <p class="section-subtitle">Un service simple en 3 étapes</p>
+
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon">📞</div>
+          <h3>Appelez-moi</h3>
+          <p>On convient d'un créneau qui vous arrange. Intervention sous 24h.</p>
+        </div>
+
+        <div class="step-arrow">→</div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon">📸</div>
+          <h3>Séance photo</h3>
+          <p>Je viens avec mon studio mobile. Prise de vue en 5 minutes.</p>
+        </div>
+
+        <div class="step-arrow">→</div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon">✅</div>
+          <h3>Photos remises</h3>
+          <p>6 photos imprimées + code e-photo. 20 minutes max. C'est fini !</p>
+        </div>
+      </div>
+
+      <div class="guarantee-box">
+        <img src="./assets/agrée-ANTS.webp" alt="Agréé ANTS" class="guarantee-logo" />
+        <div class="guarantee-text">
+          <strong>Garantie acceptation</strong>
+          <p>Photos conformes ANTS (ISO/IEC 19794-5). Refusée = refaite gratuitement.</p>
+        </div>
+      </div>
+
+      <a class="tel" href="tel:0672901614">Réserver ma séance <i class="fa-solid fa-phone-volume"></i></a>
+    </section>
+
+    <!-- SECTION TARIFS -->
+    <section class="section section-pricing" id="section-2">
+      <h2>Tarifs transparents</h2>
+      <p class="section-subtitle">6 photos d'identité conformes ANTS • Tout compris</p>
+
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Proximité</h3>
+          <div class="pricing-amount">59€</div>
+          <p>Jusqu'à 15 km</p>
+        </div>
+        <div class="pricing-card ">
+          <!-- <span class="pricing-popular">Le plus demandé</span> -->
+          <h3>Déplacement étendu</h3>
+          <div class="pricing-amount">64€</div>
+          <p>De 15 à 25 km</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Long déplacement</h3>
+          <div class="pricing-amount">79€</div>
+          <p>Au-delà de 25 km</p>
+        </div>
+      </div>
+
+      <p class="pricing-note">Tarif dégressif pour plusieurs personnes. Code e-photo inclus pour permis et titre de séjour.</p>
+
+      <a class="tel" href="tel:0672901614">Demander un devis <i class="fa-solid fa-phone-volume"></i></a>
+    </section>
+
+    <!-- SECTION ZONES INTERVENTION -->
+    <section class="section section-zones" id="zones-intervention">
       <h2>Zones d'Intervention</h2>
-      <p>Je me déplace dans tout l'Ouest Lyonnais :</p>
-      <h6>- Jusqu'à 15 km : 49 €  
-        - De 15 km à 25 km : 64 €  
-        - Au‑delà de 25 km : 79 € </h6>
-      <div class="villes-grid">
-        <a href="/photo-identite-domicile-l-arbresle.html">L'Arbresle</a>
-        <a href="/photo-identite-domicile-brignais.html">Brignais</a>
-        <a href="/photo-identite-domicile-charbonnieres-les-bains.html">Charbonnières-les-Bains</a>
-        <a href="/photo-identite-domicile-craponne.html">Craponne</a>
-        <a href="/photo-identite-domicile-ecully.html">Écully</a>
-        <a href="/photo-identite-domicile-francheville.html">Francheville</a>
-        <a href="/photo-identite-domicile-lyon.html">Lyon</a>
-        <a href="/photo-identite-domicile-marcy-l-etoile.html">Marcy-l'Étoile</a>
-        <a href="/photo-identite-domicile-mornant.html">Mornant</a>
-        <a href="/photo-identite-domicile-oullins.html">Oullins</a>
-        <a href="/photo-identite-domicile-pierre-benite.html">Pierre-Bénite</a>
-        <a href="/photo-identite-domicile-saint-genis-laval.html">Saint-Genis-Laval</a>
-        <a href="/photo-identite-domicile-saint-martin-en-haut.html">Saint-Martin-en-Haut</a>
-        <a href="/photo-identite-domicile-tassin-la-demi-lune.html">Tassin-la-Demi-Lune</a>
+
+      <p class="zones-intro">
+        Photographe d’identité basé dans l’Ouest lyonnais,
+        j’interviens à domicile dans toute la région lyonnaise
+        et ses environs.
+        Le tarif dépend uniquement de la distance de déplacement, par rapport ou lieu ou je me trouve avant de venir chez vous.
+      </p>
+      <div class="zones-container">
+        <div class="zones-info">
+          <div class="zone-card zone-lyon">
+            <div class="zone-icon"><i class="fa-solid fa-city"></i></div>
+            <h3>Secteur proche</h3>
+            <!-- <span class="zone-price">49€</span> -->
+            <span class="zone-distance">Jusqu'à 15 km</span>
+          </div>
+
+          <div class="zone-card zone-ouest">
+            <div class="zone-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <h3>Périphérie</h3>
+            <!-- <span class="zone-price">64€</span> -->
+            <span class="zone-distance">De 15 à 25 km</span>
+          </div>
+
+          <div class="zone-card zone-plus">
+            <div class="zone-icon"><i class="fa-solid fa-route"></i></div>
+            <h3>Plus loin</h3>
+            <!-- <span class="zone-price">79€</span> -->
+            <span class="zone-distance">Au-delà de 25 km</span>
+          </div>
+        </div>
+
+        <div class="villes-section">
+          <h3><i class="fa-solid fa-location-dot"></i> Villes desservies</h3>
+          <div class="villes-grid">
+            <a href="/photo-identite-domicile-lyon.html"><i class="fa-solid fa-star"></i> Lyon</a>
+            <a href="/photo-identite-domicile-tassin-la-demi-lune.html">Tassin-la-Demi-Lune</a>
+            <a href="/photo-identite-domicile-ecully.html">Écully</a>
+            <a href="/photo-identite-domicile-francheville.html">Francheville</a>
+            <a href="/photo-identite-domicile-craponne.html">Craponne</a>
+            <a href="/photo-identite-domicile-oullins.html">Oullins</a>
+            <a href="/photo-identite-domicile-saint-genis-laval.html">Saint-Genis-Laval</a>
+            <a href="/photo-identite-domicile-brignais.html">Brignais</a>
+            <a href="/photo-identite-domicile-charbonnieres-les-bains.html">Charbonnières-les-Bains</a>
+            <a href="/photo-identite-domicile-marcy-l-etoile.html">Marcy-l'Étoile</a>
+            <a href="/photo-identite-domicile-pierre-benite.html">Pierre-Bénite</a>
+            <a href="/photo-identite-domicile-mornant.html">Mornant</a>
+            <a href="/photo-identite-domicile-l-arbresle.html">L'Arbresle</a>
+            <a href="/photo-identite-domicile-saint-martin-en-haut.html">Saint-Martin-en-Haut</a>
+          </div>
+          <p class="zones-note">Votre ville n'est pas listée ? Contactez-moi pour un devis personnalisé.</p>
+        </div>
       </div>
-     
+
+      <a class="tel" href="tel:0672901614">Vérifier ma zone <i class="fa-solid fa-phone-volume"></i></a>
     </section>
 
-    <section class="section" id="section-4">
-      <h2>Comment fonctionne le service de photographie d'identité à domicile ?</h2>
-      <img class="paiement" src="./assets/paiement.png" alt="Paiement icon" />
-      <div class="wrapper__section4">
-        <h3>👉 Quel est le tarif pour obtenir 6 photos d'identité à domicile ?</h3>
-        <p><strong>Le tarif </strong>pour une planche de 6 photos d'identité ou E-photo, est de <strong>49 euros ttc</strong>.</p>
-        <p>- Jusqu'à 15 km : 49 €  
-          - De 15 km à 25 km : 64 €  
-          - Au‑delà de 25 km : 79 € </p>
-        <h3>👉 Combien de temps dure la séance de photographie d'identité à domicile?</h3>
-        <p>La séance dure 15 minutes maximum. Ce temps comprend l'installation du mini-studio, la prise de vue, le traitement de la photo d'identité, l'impression de la photo d'identité, le rangement du mini-studio</p>
-        <h3>👉 Qu'est-ce qui est compris dans le tarif de 49 € ?</h3>
-        <p>Le tarif de 49 euros comprend la prise de vue, le traitement des photos, le matériel de studio, l'impression des photos, l'imprimante et le papier, ainsi que le déplacement.</p>
-        <h3>👉 Le tarif peut-il être dégressif pour faire réaliser des photos d'identité à domicile ?</h3>
-        <p>Le tarif peut être dégressif pour plusieurs personnes lors d'un même rendez-vous.</p>
-        <h3>👉 Peut-on obtenir un devis personnalisé pour des photos d'identités à domicile?</h3>
-        <p>Contactez-nous pour un devis personnalisé.</p>
-      </div>
-      <a class="tel" href="tel:0672901614">Téléphone <i class="fa-solid fa-phone-volume"></i> </a>
-    </section>
-
-    <section id="formulaire" class="section" id="section-5">
-      <h2>Prendre rendez-vous pour obtenir vos photos d'identités à domicile.</h2>
-      <p>Vous pouvez me contacter par téléphone, par mail ou via le formulaire ci-dessous.</p>
-      <div class="wrapper__a">
-        <a href="tel:+33672901614" class="tel">06 72 90 16 14</a>
-        <a href="mailto:gralypho@gmail.com" class="tel">id.domicile@gmail.com</a>
-      </div>
-    </section>
-
+    <!-- SECTION TEMOIGNAGES -->
     <section class="testimonials section">
       <h2>Ils m'ont fait confiance</h2>
-      
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐</div>
-        <p>J'ai trouvé le service sur internet. Ma femme a des problèmes pour se déplacer. Merci beaucoup Fabien pour vos photos de qualité.</p>
-        <cite>— Pascal T., Tassin-la-Demi-Lune</cite>
+
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Ma femme a des problèmes pour se déplacer. Merci beaucoup Fabien pour vos photos de qualité."</p>
+          <cite>— Pascal T., Tassin-la-Demi-Lune</cite>
+        </div>
+
+        <div class="testimonial">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Photographe très pro. Il a su s'attirer la confiance de ma fille de 18 mois pour des photos d'identité parfaites."</p>
+          <cite>— Mélanie F., Francheville</cite>
+        </div>
+
+        <div class="testimonial">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Mille Merci Fabien pour votre venue à l'hôpital Saint Luc. Sans votre intervention, le titre de séjour de mon père n'aurait pu se reconduire."</p>
+          <cite>— Zakary M., Lyon 2</cite>
+        </div>
       </div>
-      
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐</div>
-        <p>Photographe très pro. Il a su s'attirer la confiance de ma fille de 18 mois pour des photos d'identité parfaites.</p>
-        <cite>— Mélanie F., Francheville</cite>
-      </div>
-      
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐</div>
-        <p> Mille Merci Fabien pour votre venue à l'hôpital Saint Luc.Sans votre intervention, le titre de séjour de mon père n'aurait pu se reconduire</p>
-        <cite>— Zakary M., Lyon 2</cite>
-      </div>
-      
-     
     </section>
 
-    <section id="formulaire" class="question" id="section-6">
-      <h2>Questions fréquentes sur les photos d'identité à domicile</h2>
-      <br />
-      <h3>Combien coûte une photo d'identité à domicile à Lyon et Lyon-Ouest ?</h3>
-      <p>
-        Le tarif est de 49€ pour une planche de 6 photos ou 4 e-photo numérisée ANTS. <br />Déplacement sur Lyon et l'Ouest Lyonnais (Lyon, Tassin, Écully, Francheville, Craponne, Chazelle, etc.).
-
-        - Jusqu'à 15 km : 49 €  
-        - De 15 km à 25 km : 64 €  
-        - Au‑delà de 25 km : 79 €
-      </p>
-
-      <h3>Comment faire des photos d'identité à domicile à Lyon ?</h3>
-      <p>
-        Vous pouvez essayer de les faire vous même, pour votre passeport et votre carte d'identité. <br />Pour le permis de conduire et le titre de séjour il vous faut une photographie numérique (e-photo) aux normes ISO/IEC 19794-5. <br />Si vous ne voulez pas ou ne pouvez-pas vous déplacer,
-        appelez-moi pour convenir d'un rendez-vous. <br />Nous nous rendons à votre domicile, sur votre lieu de travail, à l'hôpital, en centre (...). La séance dure 20 minutes maximum et vos 6 photos vous sont remises instantanément pour 49 euros seulement.
-      </p>
-
-      <h3>Une séance de photo d'identité à domicile dure combien de temps?</h3>
-      <p>Une séance dure au maximum 25 minutes. La prise de vue dure 5 minutes - Le post-traitement de la photo, sa signature et son impression dure 15 minutes - le rangement dure 5 min.</p>
-
-      <h3>Est-ce que le photographe à domicile est agréé ANTS ?</h3>
-      <p>Oui, le photographe est agréé ANTS (Agence Nationale des Titres Sécurisés). Cela garantit que vos photos sont 100% conformes aux normes biométriques et seront acceptées par toutes les préfectures pour passeport, carte d'identité, permis de conduire, etc.</p>
-
-      <h3>Quel est le délai pour obtenir vos photos d'identité ?</h3>
-      <p>J'interviens sous 24h sur Lyon et Lyon Ouest. Pour les demandes très urgentes, je propose un service express sous 1h (supplément de 40€). Prise de vue et remise des photos instantanément et l'e-photo est envoyée sur votre boîte mail aussitôt.</p>
-
-      <h3>Peut-on vraiment faire ses photos d'identité à domicile ?</h3>
-      <p>
-        Oui, c'est 100% légal et conforme. J'utilise un matériel professionnel agréé ANTS avec fond homologué et éclairage calibré. Le service de photos d'identité à domicile vous fait gagner du temps et évite les déplacements et c'est particulièrement pratique pour les personnes à mobilité réduite,
-        les familles ou les professionnels. Pour les e-photos des titres de séjour et permis de conduire, vous ne vous déplacez plus, toutes les démarches se font ensuite en ligne.
-      </p>
-    </section>
-
+    <!-- SECTION A PROPOS -->
     <section class="section marceau">
-      <h2>Fabien Marceau, un photographe d'expérience à votre service</h2>
-      <h3>Expérimenté - Agrée ANTS - Professionnel </h3>
-      <img class="portrait" src="./assets/portrait Fabien Marceau.jpg" alt="Fabien Marceau -  Photographe professionnel" />
-      <p>
-        Je suis Fabien Marceau, photographe professionnel (publicité, mode, presse, etc) spécialisé aujourd'hui dans la photographie d'identité à domicile sur Lyon et Lyon Ouest. Avec plus de 20 ans d'expérience, je m'engage à fournir un service rapide, efficace et de haute qualité pour tous vos documents officiels (Passeport biométrique, carte d'identité, titre de séjour, permis de conduire, portrait professionnel).
-      </p>
-      <a class="le-progres" target="_blank" href="https://www.leprogres.fr/economie/2025/06/10/fabien-marceau-apporte-une-solution-au-casse-tete-des-photos-d-identite-en-milieu-rural">Article - Le Progrès</a>
+      <h2>Fabien Marceau, photographe d'expérience</h2>
+      <div class="about-content">
+        <img class="portrait" src="./assets/portrait Fabien Marceau.jpg" alt="Fabien Marceau - Photographe professionnel agréé ANTS" />
+        <div class="about-text">
+          <p>Photographe professionnel depuis plus de 20 ans (publicité, mode, presse), je me suis spécialisé dans la photographie d'identité à domicile sur Lyon et Lyon Ouest.</p>
+          <p>Mon engagement : un service rapide, efficace et de haute qualité pour tous vos documents officiels.</p>
+          <a class="le-progres" target="_blank" href="https://www.leprogres.fr/economie/2025/06/10/fabien-marceau-apporte-une-solution-au-casse-tete-des-photos-d-identite-en-milieu-rural">
+            <i class="fa-solid fa-newspaper"></i> Article - Le Progrès
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- <section class="section"> -->
+    <!-- SECTION FAQ -->
+    <section class="question" id="faq">
+      <h2>Questions fréquentes</h2>
+
+      <div class="faq-item">
+        <h3>Combien coûte une photo d'identité à domicile ?</h3>
+        <p>Le tarif est de 49€ à 79€ selon la distance, pour une planche de 6 photos conformes ANTS. Code e-photo inclus pour permis et titre de séjour.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Combien de temps dure une séance ?</h3>
+        <p>20 minutes maximum : installation du studio mobile, prise de vue, traitement et impression sur place.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Êtes-vous agréé ANTS ?</h3>
+        <p>Oui, je suis agréé ANTS. Vos photos sont 100% conformes aux normes biométriques et acceptées par toutes les administrations.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Quel est le délai d'intervention ?</h3>
+        <p>J'interviens sous 24h sur Lyon et Lyon Ouest. Service express sous 1h disponible (+40€).</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Et si ma photo est refusée ?</h3>
+        <p>Garantie satisfaction : si une photo est refusée par l'administration, je la refais gratuitement.</p>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="formulaire" class="section">
+      <h2>Contactez-moi</h2>
+      <p>Par téléphone, email ou via le formulaire</p>
+      <div class="wrapper__a">
+        <a href="tel:+33672901614" class="tel"><i class="fa-solid fa-phone"></i> 06 72 90 16 14</a>
+        <a href="mailto:id.domicile@gmail.com" class="tel"><i class="fa-solid fa-envelope"></i> id.domicile@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE -->
     <form id="contactForm">
       <h2>Formulaire de Contact</h2>
       <label for="Nom">Nom:</label>
@@ -400,36 +474,29 @@
       <input id="Email" name="Email" type="email" required /><br />
 
       <label for="Demande">Demande:</label>
-
       <textarea id="Demande" name="Demande" required></textarea><br />
 
       <label for="Téléphone">Téléphone:</label>
       <input id="Téléphone" name="Téléphone" type="tel" /><br />
 
-      <button class="submit" type="submit">Soumettre</button>
+      <button class="submit" type="submit">Envoyer</button>
     </form>
 
-    <p id="confirmationMessage">Données enregistrées avec succès !</p>
+    <p id="confirmationMessage">Message envoyé avec succès !</p>
     <p id="message"></p>
-    <!-- </section> -->
 
     <footer>
-      <p>0672901614 - id.domicile@gmail.com</p>
-      <p>© 2025 Photos d'identité à domicile. <br />Tous droits réservés.</p>
-      <p>Mentions légales | Politique de confidentialité</p>
+      <p>06 72 90 16 14 - id.domicile@gmail.com</p>
+      <p>© 2025 Photos d'identité à domicile - Fabien Marceau</p>
+      <p>Tous droits réservés | Mentions légales</p>
     </footer>
-
-    <!-- 
-=================================
-MENU
-================================ -->
 
     <script>
       const form = document.getElementById("contactForm");
       const confirmationMessage = document.getElementById("confirmationMessage");
 
       form.addEventListener("submit", async function (event) {
-        event.preventDefault(); // Empêche le rechargement
+        event.preventDefault();
 
         const formData = new FormData(form);
 
@@ -439,22 +506,16 @@ MENU
             body: formData,
           });
 
-          // const text = await response.text();
-          // alert(text);
-
-          // Affiche le message de confirmation avec animation
           confirmationMessage.classList.add("show");
 
-          // Cache le message après quelques secondes
           setTimeout(() => {
             confirmationMessage.classList.remove("show");
-          }, 5000); // Cache après 5 secondes
+          }, 5000);
 
-          // Réinitialise le formulaire après soumission
           form.reset();
         } catch (error) {
-          console.error("Erreur lors de l’envoi :", error);
-          alert("Erreur lors de l’envoi du formulaire.");
+          console.error("Erreur lors de l'envoi :", error);
+          alert("Erreur lors de l'envoi du formulaire.");
         }
       });
     </script>
@@ -462,9 +523,43 @@ MENU
     <script>
       function toggleMenu() {
         document.getElementById("navLinks").classList.toggle("active");
-        console.log(1);
         document.querySelector(".X").classList.toggle("active");
       }
+
+      // Animations au scroll - plus réactives
+      const observerOptions = {
+        threshold: 0.05,
+        rootMargin: "0px 0px 50px 0px"
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Observer les éléments à animer avec délai réduit
+      document.querySelectorAll(".audience-card, .step, .pricing-card, .testimonial, .faq-item, .guarantee-box, .zone-card").forEach((el, index) => {
+        el.classList.add("animate-on-scroll");
+        el.style.transitionDelay = `${Math.min(index * 0.05, 0.3)}s`;
+        observer.observe(el);
+      });
+
+      // Animation du hero au chargement
+      document.addEventListener("DOMContentLoaded", () => {
+        const heroElements = document.querySelectorAll(".hero-main, .hero-visual, .documents-strip");
+        heroElements.forEach((el, i) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          setTimeout(() => {
+            el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          }, 200 + i * 150);
+        });
+      });
     </script>
   </body>
 </html>
