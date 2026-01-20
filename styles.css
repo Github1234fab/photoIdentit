@@ -212,6 +212,9 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+.tarif-politique{
+  font-weight: 900;
+}
 
 .header {
   display: flex;
@@ -1531,8 +1534,8 @@ textarea {
   height: 400px;
   object-fit: contain;
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-xl);
-  border: 1px solid rgb(172, 171, 171);
+  /* box-shadow: var(--shadow-xl); */
+  /* border: 1px solid rgb(172, 171, 171); */
 }
 
 .hero-floating-card {
@@ -1545,7 +1548,6 @@ textarea {
   box-shadow: var(--shadow-lg);
   max-width: 220px;
   animation: float 4s ease-in-out infinite;
-  border-left: 4px solid var(--success-color);
 }
 
 .floating-stars {
@@ -1570,10 +1572,10 @@ textarea {
   padding: 1rem;
 }
 
-.documents-strip > span {
+/* .documents-strip > span {
   color: var(--text-light);
-  font-weight: 500;
-}
+  font-weight: 600;
+} */
 
 /* ========================= */
 /* AUDIENCE SECTION          */
@@ -2003,7 +2005,7 @@ footer p {
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius-md);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 800;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
@@ -2296,6 +2298,7 @@ ul li:hover {
 .ants:hover {
   transform: scale(1.05);
 }
+
 .img-camera-hero {
   position: absolute;
   top: 50%;
@@ -3238,7 +3241,6 @@ textarea {
   object-fit: contain;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-xl);
-  border: 1px solid rgb(172, 171, 171);
 }
 
 .hero-floating-card {
@@ -4128,6 +4130,8 @@ textarea {
   }
 
   /* Mobile: Testimonials */
+
+  
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
